@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		870101FA1D06AA22002E6881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101F91D06AA22002E6881 /* main.m */; };
+		870101FD1D06AA22002E6881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FC1D06AA22002E6881 /* AppDelegate.m */; };
+		870102001D06AA22002E6881 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FF1D06AA22002E6881 /* ViewController.m */; };
+		870102031D06AA22002E6881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870102011D06AA22002E6881 /* Main.storyboard */; };
+		870102051D06AA22002E6881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870102041D06AA22002E6881 /* Assets.xcassets */; };
+		870102081D06AA22002E6881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870102061D06AA22002E6881 /* LaunchScreen.storyboard */; };
+		870102131D06AA22002E6881 /* LinkedME_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102121D06AA22002E6881 /* LinkedME_DEMOTests.m */; };
+		8701021E1D06AA22002E6881 /* LinkedME_DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701021D1D06AA22002E6881 /* LinkedME_DEMOUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8701020F1D06AA22002E6881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 870101ED1D06AA22002E6881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 870101F41D06AA22002E6881;
+			remoteInfo = LinkedME_DEMO;
+		};
+		8701021A1D06AA22002E6881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 870101ED1D06AA22002E6881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 870101F41D06AA22002E6881;
+			remoteInfo = LinkedME_DEMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		870101F51D06AA22002E6881 /* LinkedME_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedME_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		870101F91D06AA22002E6881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		870101FB1D06AA22002E6881 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		870101FC1D06AA22002E6881 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		870101FE1D06AA22002E6881 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		870101FF1D06AA22002E6881 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		870102021D06AA22002E6881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		870102041D06AA22002E6881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		870102071D06AA22002E6881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		870102091D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedME_DEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870102121D06AA22002E6881 /* LinkedME_DEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedME_DEMOTests.m; sourceTree = "<group>"; };
+		870102141D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedME_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8701021D1D06AA22002E6881 /* LinkedME_DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedME_DEMOUITests.m; sourceTree = "<group>"; };
+		8701021F1D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		870101F21D06AA22002E6881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8701020B1D06AA22002E6881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870102161D06AA22002E6881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870101EC1D06AA22002E6881 = {
+			isa = PBXGroup;
+			children = (
+				870101F71D06AA22002E6881 /* LinkedME_DEMO */,
+				870102111D06AA22002E6881 /* LinkedME_DEMOTests */,
+				8701021C1D06AA22002E6881 /* LinkedME_DEMOUITests */,
+				870101F61D06AA22002E6881 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		870101F61D06AA22002E6881 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				870101F51D06AA22002E6881 /* LinkedME_DEMO.app */,
+				8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */,
+				870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		870101F71D06AA22002E6881 /* LinkedME_DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				870101FB1D06AA22002E6881 /* AppDelegate.h */,
+				870101FC1D06AA22002E6881 /* AppDelegate.m */,
+				870101FE1D06AA22002E6881 /* ViewController.h */,
+				870101FF1D06AA22002E6881 /* ViewController.m */,
+				870102011D06AA22002E6881 /* Main.storyboard */,
+				870102041D06AA22002E6881 /* Assets.xcassets */,
+				870102061D06AA22002E6881 /* LaunchScreen.storyboard */,
+				870102091D06AA22002E6881 /* Info.plist */,
+				870101F81D06AA22002E6881 /* Supporting Files */,
+			);
+			path = LinkedME_DEMO;
+			sourceTree = "<group>";
+		};
+		870101F81D06AA22002E6881 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				870101F91D06AA22002E6881 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		870102111D06AA22002E6881 /* LinkedME_DEMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				870102121D06AA22002E6881 /* LinkedME_DEMOTests.m */,
+				870102141D06AA22002E6881 /* Info.plist */,
+			);
+			path = LinkedME_DEMOTests;
+			sourceTree = "<group>";
+		};
+		8701021C1D06AA22002E6881 /* LinkedME_DEMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8701021D1D06AA22002E6881 /* LinkedME_DEMOUITests.m */,
+				8701021F1D06AA22002E6881 /* Info.plist */,
+			);
+			path = LinkedME_DEMOUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		870101F41D06AA22002E6881 /* LinkedME_DEMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870102221D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMO" */;
+			buildPhases = (
+				870101F11D06AA22002E6881 /* Sources */,
+				870101F21D06AA22002E6881 /* Frameworks */,
+				870101F31D06AA22002E6881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinkedME_DEMO;
+			productName = LinkedME_DEMO;
+			productReference = 870101F51D06AA22002E6881 /* LinkedME_DEMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8701020D1D06AA22002E6881 /* LinkedME_DEMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870102251D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOTests" */;
+			buildPhases = (
+				8701020A1D06AA22002E6881 /* Sources */,
+				8701020B1D06AA22002E6881 /* Frameworks */,
+				8701020C1D06AA22002E6881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870102101D06AA22002E6881 /* PBXTargetDependency */,
+			);
+			name = LinkedME_DEMOTests;
+			productName = LinkedME_DEMOTests;
+			productReference = 8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		870102181D06AA22002E6881 /* LinkedME_DEMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870102281D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOUITests" */;
+			buildPhases = (
+				870102151D06AA22002E6881 /* Sources */,
+				870102161D06AA22002E6881 /* Frameworks */,
+				870102171D06AA22002E6881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8701021B1D06AA22002E6881 /* PBXTargetDependency */,
+			);
+			name = LinkedME_DEMOUITests;
+			productName = LinkedME_DEMOUITests;
+			productReference = 870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		870101ED1D06AA22002E6881 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Bindx;
+				TargetAttributes = {
+					870101F41D06AA22002E6881 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					8701020D1D06AA22002E6881 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 870101F41D06AA22002E6881;
+					};
+					870102181D06AA22002E6881 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 870101F41D06AA22002E6881;
+					};
+				};
+			};
+			buildConfigurationList = 870101F01D06AA22002E6881 /* Build configuration list for PBXProject "LinkedME_DEMO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 870101EC1D06AA22002E6881;
+			productRefGroup = 870101F61D06AA22002E6881 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				870101F41D06AA22002E6881 /* LinkedME_DEMO */,
+				8701020D1D06AA22002E6881 /* LinkedME_DEMOTests */,
+				870102181D06AA22002E6881 /* LinkedME_DEMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		870101F31D06AA22002E6881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870102081D06AA22002E6881 /* LaunchScreen.storyboard in Resources */,
+				870102051D06AA22002E6881 /* Assets.xcassets in Resources */,
+				870102031D06AA22002E6881 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8701020C1D06AA22002E6881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870102171D06AA22002E6881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		870101F11D06AA22002E6881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870102001D06AA22002E6881 /* ViewController.m in Sources */,
+				870101FD1D06AA22002E6881 /* AppDelegate.m in Sources */,
+				870101FA1D06AA22002E6881 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8701020A1D06AA22002E6881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870102131D06AA22002E6881 /* LinkedME_DEMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870102151D06AA22002E6881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8701021E1D06AA22002E6881 /* LinkedME_DEMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		870102101D06AA22002E6881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 870101F41D06AA22002E6881 /* LinkedME_DEMO */;
+			targetProxy = 8701020F1D06AA22002E6881 /* PBXContainerItemProxy */;
+		};
+		8701021B1D06AA22002E6881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 870101F41D06AA22002E6881 /* LinkedME_DEMO */;
+			targetProxy = 8701021A1D06AA22002E6881 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		870102011D06AA22002E6881 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870102021D06AA22002E6881 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		870102061D06AA22002E6881 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870102071D06AA22002E6881 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		870102201D06AA22002E6881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		870102211D06AA22002E6881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		870102231D06AA22002E6881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		870102241D06AA22002E6881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMO";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		870102261D06AA22002E6881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LinkedME_DEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedME_DEMO.app/LinkedME_DEMO";
+			};
+			name = Debug;
+		};
+		870102271D06AA22002E6881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LinkedME_DEMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedME_DEMO.app/LinkedME_DEMO";
+			};
+			name = Release;
+		};
+		870102291D06AA22002E6881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinkedME_DEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LinkedME_DEMO;
+			};
+			name = Debug;
+		};
+		8701022A1D06AA22002E6881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LinkedME_DEMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LinkedME_DEMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		870101F01D06AA22002E6881 /* Build configuration list for PBXProject "LinkedME_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870102201D06AA22002E6881 /* Debug */,
+				870102211D06AA22002E6881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870102221D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870102231D06AA22002E6881 /* Debug */,
+				870102241D06AA22002E6881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		870102251D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870102261D06AA22002E6881 /* Debug */,
+				870102271D06AA22002E6881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		870102281D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870102291D06AA22002E6881 /* Debug */,
+				8701022A1D06AA22002E6881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 870101ED1D06AA22002E6881 /* Project object */;
+}
