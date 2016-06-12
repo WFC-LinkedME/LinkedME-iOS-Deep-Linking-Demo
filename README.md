@@ -1,4 +1,4 @@
-##LinkedME iOS 集成文档
+#LinkedME iOS 集成文档
 
 [![CI Status](http://img.shields.io/travis/Bindx/LinkedME_iOS.svg?style=flat)](https://travis-ci.org/Bindx/LinkedME_iOS)
 [![Version](https://img.shields.io/cocoapods/v/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
@@ -30,7 +30,47 @@ DefaultData | 参数默认必要参数
 注：为了iOS/Android/Web三端更好的统一，和版本迭代更新
 
 # 2.注册用户
+1. 注册用户，并登陆系统
+
+![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/register1.png)
+
 # 3.创建App生成linkedme_key
+1. 创建app
+
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/create_app11.png)
+	
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/create_app22.png)
+
+2. 获取LinkedME Key
+
+	创建完App后，系统会分配一个LinkedME App ID、LinkedME Key和LinkedME Secret（无法修改）。
+	
+	如下图的红框2，就是LinkedME Key。
+
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/get_key.png)
+
+
+3. 设置App，分为两部分：概览和链接；其中概览部分只能修改app名称和修改LOGO。
+
+
+4. 设置App的链接部分
+
+	4.1 如果没有iOS应用，Directed URL框里填写深度链接默认跳转地址；
+	
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios1.png)
+	
+	4.2 如果有iOS应用，勾选有iOS应用的框，并填写App的URI Scheme；如果App在App Store上线了，请勾选“App Store”，并填写App在App Store上的地址；
+	
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios2.png)
+	
+	4.3 如果App没有在App Store上线，请勾选“自定义”，并填写App的ipc文件的下载地址；
+	
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios3.png)
+	
+	4.4 如果App支持Universal Links，请勾选“Universal Links”,并填写Bundle ID和Apple App Prefix。
+	
+	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios4.png)
+
 # 4.工程设置
 ## 4.1 注册URLScheme（推荐/可选）
 	1.打开info.plist
@@ -47,6 +87,9 @@ DefaultData | 参数默认必要参数
 	4.添加applinks:lkme.cc和applinks:www\.lkme\.cc
 ![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/ass.png)
 
+
+# 5.代码集成
+
 ## 5.1 添加linkedme_key
 	1.打开info.plist文件
 	2.在列表中点击右键选择add row添加一个分组
@@ -55,7 +98,6 @@ DefaultData | 参数默认必要参数
 
 ![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/lmkey.png)
 
-# 5.代码集成
 ## 5.2 设置AppDelegate
 ### 5.2.1 解析深度链接跳转参数
 ### Objective-C
