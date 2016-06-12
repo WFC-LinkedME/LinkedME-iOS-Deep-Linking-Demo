@@ -210,8 +210,7 @@
 		870101F71D06AA22002E6881 /* LinkedME_DEMO */ = {
 			isa = PBXGroup;
 			children = (
-				870102911D06D091002E6881 /* LinkedME_iOS.framework */,
-				870102331D06B8DC002E6881 /* umeng */,
+				87B8262B1D0D33E00099CAA5 /* Lib */,
 				8701022D1D06AB78002E6881 /* LinkedME_DEMO.entitlements */,
 				870101FB1D06AA22002E6881 /* AppDelegate.h */,
 				870101FC1D06AA22002E6881 /* AppDelegate.m */,
@@ -373,6 +372,15 @@
 				8701026C1D06B8DC002E6881 /* WXApiObject.h */,
 			);
 			path = Wechat;
+			sourceTree = "<group>";
+		};
+		87B8262B1D0D33E00099CAA5 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				870102911D06D091002E6881 /* LinkedME_iOS.framework */,
+				870102331D06B8DC002E6881 /* umeng */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
