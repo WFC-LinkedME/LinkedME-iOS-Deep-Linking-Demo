@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>url</key>
+		<string>https://www.linkedme.cc/iosdemo/apps.jsp</string>
+		<key>key</key>
+		<string>DetailViewController</string>
+		<key>form</key>
+		<string>partner</string>
+		<key>info</key>
+		<string>LinkedME产品已经被众多移动应用垂青, 比如Uber、滴滴、36Kr、小饭桌、每天、道口贷等等, 更多应用正在集成中...</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>https://www.linkedme.cc/iosdemo/features.jsp</string>
+		<key>key</key>
+		<string>DetailViewController</string>
+		<key>form</key>
+		<string>feature</string>
+		<key>info</key>
+		<string>LinkedME产品特点主要包括几个方面, 比如跨平台链接,深度内容分享,APP间互联,WEB和APP互通,可视化数据分析中心,精细化运营等等...</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>https://www.linkedme.cc/h5/feature</string>
+		<key>key</key>
+		<string>DetailViewController</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>https://www.linkedme.cc/iosdemo/intro.jsp</string>
+		<key>key</key>
+		<string>DetailViewController</string>
+		<key>form</key>
+		<string>summary</string>
+		<key>info</key>
+		<string>LinkedME是移动应用跨平台链接的解决方案,针对应用内所有页面定义唯一链接,使得移动应用不再是信息孤岛...</string>
+	</dict>
+</array>
+</plist>
