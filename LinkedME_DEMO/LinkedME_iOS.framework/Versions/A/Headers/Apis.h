@@ -19,5 +19,4 @@ static NSString *const HostIP =  @"";
 //获取Uber估计价格
 static NSString *const Uber_estimates = @"http://api.uber.com/v1/estimates/price";
 
-
 #endif /* Apis_h */

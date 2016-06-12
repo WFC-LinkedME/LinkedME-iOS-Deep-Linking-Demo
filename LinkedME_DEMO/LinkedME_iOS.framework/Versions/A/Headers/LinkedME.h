@@ -1411,7 +1411,7 @@ typedef NS_ENUM(NSUInteger, LMPromoCodeUsageType) {
  @param arr 自定义参数
  @param completion 完成回调
  */
-+ (void)presentViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSArray *)arr completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
++ (void)presentViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
 /**
  页面跳转方式-presentView(storyBoard实现ViewController)
@@ -1422,7 +1422,7 @@ typedef NS_ENUM(NSUInteger, LMPromoCodeUsageType) {
  @param arr 自定义参数
  @param completion 完成回调
  */
-+ (void)presentViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSArray *)arr completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
++ (void)presentViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
 /**
  页面跳转方式-push（纯代码实现ViewController）
@@ -1432,7 +1432,7 @@ typedef NS_ENUM(NSUInteger, LMPromoCodeUsageType) {
  @param arr 自定义参数
  @param completion 完成回调
  */
-+ (void)pushViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSArray *)arr completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
++ (void)pushViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
 /**
  页面跳转方式-push(storyBoard实现ViewController)
@@ -1443,7 +1443,7 @@ typedef NS_ENUM(NSUInteger, LMPromoCodeUsageType) {
  @param arr 自定义参数
  @param completion 完成回调
  */
-+ (void)pushViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSArray *)arr completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
++ (void)pushViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
 +(UIViewController *)getViewController;
 

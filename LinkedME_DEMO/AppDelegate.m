@@ -26,7 +26,6 @@
     [linkedme setDebug];
     //注册Spoltlight
 
-
     
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     DetailViewController  *featureVC=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
@@ -43,31 +42,10 @@
             NSString *tag = params[@"$control"][@"ViewId"];
             
             if ([title isEqualToString:@"DetailViewController"]) {
-                [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@[tag] completion:^{
+                [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
                     
                 }];
             }
-           
-//            if ([title isEqualToString:@"demo"]) {
-//                [LinkedME presentViewController:@"LMDemoViewController" storyBoardID:@"demoviewcontroller" animated:YES customValue:nil completion:^{
-//                    
-//                }];
-//                
-//            } else if ([title isEqualToString:@"Summary"]) {
-//                [LinkedME presentViewController:@"LMSummaryViewController" storyBoardID:@"partnerviewcontroller" animated:YES customValue:nil completion:^{
-//                    
-//                }];
-//                
-//            } else if ([title isEqualToString:@"Feature"]) {
-//                [LinkedME presentViewController:@"LMPartnerViewController" storyBoardID:@"summaryviewcontroller" animated:YES customValue:nil completion:^{
-//                    
-//                }];
-//                
-//            } else if ([title isEqualToString:@"Partner"]) {
-//                [LinkedME presentViewController:@"LMPartnerViewController" storyBoardID:@"partnerviewcontroller" animated:YES customValue:@[@"我就是我，是颜色不一样的自定义参数~~"] completion:^{
-//                    
-//                }];
-//            }
         } else {
             NSLog(@"LinkedME failed init: %@", error);
         }

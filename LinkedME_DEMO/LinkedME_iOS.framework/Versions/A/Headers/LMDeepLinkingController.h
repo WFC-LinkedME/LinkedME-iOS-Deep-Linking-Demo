@@ -15,6 +15,7 @@
 @protocol LMDeepLinkingController <NSObject>
 
 - (void)configureControlWithData:(NSDictionary *)data;
+
 @property (weak, nonatomic) id <LMDeepLinkingControllerCompletionDelegate> deepLinkingCompletionDelegate;
 
 @end
