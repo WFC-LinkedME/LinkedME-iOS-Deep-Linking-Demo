@@ -15,7 +15,6 @@
 
 
 static NSString * const H5_TEST_URL = @"http://192.168.10.101:8888/h5/summary?linkedme=";
-//static NSString * const H5_LIVE_URL = @"https://www.linkedme.cc/h5/summary?linkedme=";
 static NSString * LINKEDME_SHORT_URL;
 
 @interface DetailViewController ()<UMSocialUIDelegate>
@@ -29,7 +28,6 @@ static NSString * LINKEDME_SHORT_URL;
     NSInteger page;
     NSString *title;
     NSArray *arr;
-    NSString *openUrl;
     NSString * H5_LIVE_URL;
 }
 
@@ -46,7 +44,7 @@ static NSString * LINKEDME_SHORT_URL;
 
 - (void)configureControlWithData:(NSDictionary *)data{
     deepLinking = YES;
-    openUrl = [data objectForKey:@"tag"];
+    _openUrl = [data objectForKey:@"tag"];
 }
 
 
@@ -54,9 +52,9 @@ static NSString * LINKEDME_SHORT_URL;
     NSString *Plist=[[NSBundle mainBundle] pathForResource:@"DefaultData" ofType:@"plist"];
     arr = [[NSArray alloc]initWithContentsOfFile:Plist];
     if (!deepLinking) {
-        openUrl = arr[page][@"url"];
+        _openUrl = arr[page][@"url"];
     }
-    [self loadString:openUrl];
+    [self loadString:_openUrl];
     title = arr[page][@"key"];
 }
 

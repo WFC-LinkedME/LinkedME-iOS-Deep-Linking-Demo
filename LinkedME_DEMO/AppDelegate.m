@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import <LinkedME_iOS/LinkedME.h>
-//#import "UMSocial.h"
 #import "DetailViewController.h"
 
 
@@ -23,35 +22,43 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.' //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
-    [linkedme setDebug];
-    //注册Spoltlight
+//    [linkedme setDebug];
 
     
+    //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     DetailViewController  *featureVC=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
-    
     [linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
-    
     
     //获取跳转参数
     [linkedme initSessionWithLaunchOptions:launchOptions automaticallyDisplayDeepLinkController:NO deepLinkHandler:^(NSDictionary* params, NSError* error) {
         if (!error) {
             NSLog(@"LinkedME finished init with params = %@",[params description]);
             //Router
+            //获取标题
             NSString *title = [params objectForKey:@"$og_title"];
             NSString *tag = params[@"$control"][@"ViewId"];
-            
+          
+            //使用自动跳转
             if ([title isEqualToString:@"DetailViewController"]) {
+                //通过标题跳转当详细页面，customValue跳转的参数
                 [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
                     
                 }];
             }
+            
+            //手动跳转
+            //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
+            // 传递自定义参数
+            //featureVC.xxx = params[@"$control"][@"ViewId"];
+            
+            
+            
+            
         } else {
             NSLog(@"LinkedME failed init: %@", error);
         }
     }];
-
-    
     return YES;
 }
 

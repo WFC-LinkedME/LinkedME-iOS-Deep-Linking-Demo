@@ -13,6 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+@property (strong ,nonatomic) NSString *openUrl;
+
 - (void)setPage:(NSUInteger)index;
 
 @end

@@ -1,39 +1,21 @@
 //
 //  LMButton.h
-//  iOS-Deep-Linking-SDK
+//  Pods
 //
-//  Created by han on 16/4/13.
-//  Copyright © 2016年 LM han. All rights reserved.
+//  Created by LinkedME04 on 6/16/16.
+//
 //
 
-#import <UIKit/UIKit.h>
-#import "LMContext.h"
-#import "LMUniversalObject.h"
+#import <Foundation/Foundation.h>
+#import "LMSButtonType.h"
 
-@class LMContext;
-@class LMUniversalObject;
 @interface LMButton : UIButton
 
+@property (nonatomic, copy) NSString *buttonId;
 
-@property (strong, nonatomic) LMUniversalObject *branchUniversalObject;
-@property (nonatomic,strong)  NSString *schemeUrl;
-@property (nonatomic, copy) IBInspectable NSString *buttonId;
-@property (nonatomic,copy)__block LMBaseEntity *entity;
-@property (nonatomic,assign) CompletionHandler completionHandler;
-
-- (void)prepareWithContext:(LMContext *)context
-                completion:(CompletionHandler) completionHandler;
+- (void)prepareWithType:(ButtonType)context addTo:(UIView *)view
+             completion:(void(^)(BOOL isDisplayable))completionHandler;
 
 - (instancetype)initWithButtonId:(NSString *)buttonId;
-
--(void)touchBtn;
-
-@end
-
-@interface MyUIButton : LMButton{
-    NSString *idx;
-}
-
-@property (nonatomic,retain) NSString *idx;
 
 @end
