@@ -28,8 +28,8 @@
  */
 + (instancetype)locationWithPickupName:(NSString *)pname
                            dropoffName:(NSString *)dname
-                        latitude:(CLLocationCoordinate2D)pickup
-                       longitude:(CLLocationCoordinate2D)drop;
+                                pickup:(CLLocationCoordinate2D)pickup
+                               dropoff:(CLLocationCoordinate2D)drop;
 
 
 /**
@@ -37,8 +37,8 @@
  @param latitude  The latitude of the location.
  @param longitude The longitude of the location.
  */
-+ (instancetype)locationWithLatitude:(CLLocationCoordinate2D)pickup
-                           longitude:(CLLocationCoordinate2D)drop;
++ (instancetype)locationWithPickup:(CLLocationCoordinate2D)pickup
+                           dropoff:(CLLocationCoordinate2D)drop;
 
 
 

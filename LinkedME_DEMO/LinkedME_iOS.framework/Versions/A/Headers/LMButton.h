@@ -11,8 +11,6 @@
 
 @interface LMButton : UIButton
 
-@property (nonatomic, copy) NSString *buttonId;
-
 - (void)prepareWithType:(ButtonType)context addTo:(UIView *)view
              completion:(void(^)(BOOL isDisplayable))completionHandler;
 

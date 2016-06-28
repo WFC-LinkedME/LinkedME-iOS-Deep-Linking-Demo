@@ -159,6 +159,8 @@ extern NSString * const LINKEDME_REQUEST_KEY_PICKUP_LABEL;
 extern NSString * const LINKEDME_REQUEST_KEY_DROPOFF_LAT;
 extern NSString * const LINKEDME_REQUEST_KEY_DROPOFF_LNG;
 extern NSString * const LINKEDME_REQUEST_KEY_DROPOFF_LABEL;
+extern NSString * const LINKEDME_REQUEST_KEY_SDK_VERSION;
+
 
 extern NSString * const PARAMS_ANDROID_LINK;
 extern NSString * const PARAMS_IOS_LINK;

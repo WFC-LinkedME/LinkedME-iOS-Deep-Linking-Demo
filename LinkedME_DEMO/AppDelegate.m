@@ -23,6 +23,7 @@
     // Override point for customization after application launch.' //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
 //    [linkedme setDebug];
+    
 
     
     //注册需要跳转的viewController
@@ -51,9 +52,6 @@
             //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
             // 传递自定义参数
             //featureVC.xxx = params[@"$control"][@"ViewId"];
-            
-            
-            
             
         } else {
             NSLog(@"LinkedME failed init: %@", error);

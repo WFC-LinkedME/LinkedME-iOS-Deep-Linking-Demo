@@ -23,6 +23,8 @@
 @property (nonatomic) double dropoff_longitude;
 //结束纬度
 @property (nonatomic) double dropoff_latitude;
+//Button id
+@property (nonatomic, copy) NSString *buttonId;
 
 + (LMSPreferenceHelper *)preferenceHelper;
 

@@ -46,6 +46,7 @@
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
 		870102921D06D091002E6881 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102911D06D091002E6881 /* LinkedME_iOS.framework */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
+		87105D401D2235FD00989202 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +146,7 @@
 		870102911D06D091002E6881 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87105D401D2235FD00989202 /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
@@ -237,6 +240,7 @@
 				8701028D1D06B999002E6881 /* libsqlite3.tbd */,
 				8701028B1D06B990002E6881 /* libstdc++.tbd */,
 				870102891D06B97B002E6881 /* libz.tbd */,
+				87105D3F1D2235FD00989202 /* CoreSpotlight.framework */,
 				870102871D06B969002E6881 /* CoreTelephony.framework */,
 				870102851D06B91B002E6881 /* CoreGraphics.framework */,
 				870102831D06B910002E6881 /* Security.framework */,

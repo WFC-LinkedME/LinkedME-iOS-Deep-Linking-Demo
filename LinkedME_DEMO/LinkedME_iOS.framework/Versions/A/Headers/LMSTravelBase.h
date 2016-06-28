@@ -49,6 +49,6 @@
  *	@param 	pickup 	开始位置
  *	@param 	drop 	结束位置
  */
-- (void)getUberEstimatesPriceWithPickupLocation:(CLLocationCoordinate2D)pickup DropofLocation:(CLLocationCoordinate2D)drop callBack:(void(^)(NSString *))callback;
+- (void)getEstimatesPriceCallBack:(void(^)(NSDictionary *))callback;
 
 @end
