@@ -18,7 +18,7 @@
 
 // 正式
 #define LKME_API_BASE_URL        @"http://lkme.cc"
-#define LKME_API_VERSION         @"t"
+#define LKME_API_VERSION         @"i"
 #define LINKME_KEY [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]
 
 #else
