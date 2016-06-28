@@ -29,6 +29,11 @@ DefaultData | 参数默认必要参数
 
 注：为了iOS/Android/Web三端更好的统一，和版本迭代更新
 
+## 1.1. Framework
+	1.CoreSpotlight.framework
+	2.SystemConfiguration.framework
+	3.Security.framework
+
 # 2.注册用户
 1. 注册用户，并登陆系统
 
