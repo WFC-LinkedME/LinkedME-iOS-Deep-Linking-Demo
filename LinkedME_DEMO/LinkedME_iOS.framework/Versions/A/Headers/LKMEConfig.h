@@ -19,14 +19,16 @@
 // 正式
 #define LKME_API_BASE_URL        @"http://lkme.cc"
 #define LKME_API_VERSION         @"i"
-#define LINKME_KEY [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]
+//#define LINKME_KEY = [LinkedME isDebug]?[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]:[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"test"]
 
 #else
 
 // 测试
 #define LKME_API_BASE_URL        @"http://10.0.2.106:8080"
 #define LKME_API_VERSION         @"t"
-#define LINKME_KEY [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"test"]
+//#define LINKME_KEY [NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"test"]
+//#define LINKME_KEY = [LinkedME isDebug]?[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"live"]:[NSBundle mainBundle].infoDictionary[@"linkedme_key"][@"test"]
+
 
 
 #endif

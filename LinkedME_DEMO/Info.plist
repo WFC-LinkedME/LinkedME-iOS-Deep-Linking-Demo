@@ -21,10 +21,11 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>uber</string>
-				<string>lkmedeme</string>
+				<string>linkedmedemo</string>
 			</array>
 		</dict>
 		<dict>
@@ -73,9 +74,9 @@
 	<key>linkedme_key</key>
 	<dict>
 		<key>live</key>
-		<string>838212907f1a18565f85a63ed2508774</string>
+		<string>linkedme_test_7e289a2484f4368dbafbd1e5c7d06903</string>
 		<key>test</key>
-		<string>838212907f1a18565f85a63ed2508774</string>
+		<string>linkedme_test_7e289a2484f4368dbafbd1e5c7d06903</string>
 	</dict>
 </dict>
 </plist>

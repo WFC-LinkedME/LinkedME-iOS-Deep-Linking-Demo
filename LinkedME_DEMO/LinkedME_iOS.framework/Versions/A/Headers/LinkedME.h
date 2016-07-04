@@ -414,11 +414,6 @@ typedef NS_ENUM(NSUInteger, LMPromoCodeUsageType) {
  */
 - (void)disableCookieBasedMatching;
 
-/**
- faceBook sdk冲突解决
- */
-- (void)accountForFacebookSDKPreventingAppLaunch;
-
 #pragma mark - Session Item methods
 
 ///--------------------

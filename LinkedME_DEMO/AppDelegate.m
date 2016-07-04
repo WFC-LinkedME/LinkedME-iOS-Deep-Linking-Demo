@@ -23,9 +23,7 @@
     // Override point for customization after application launch.' //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
 //    [linkedme setDebug];
-    
 
-    
     //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     DetailViewController  *featureVC=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
@@ -44,7 +42,7 @@
             if ([title isEqualToString:@"DetailViewController"]) {
                 //通过标题跳转当详细页面，customValue跳转的参数
                 [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
-                    
+
                 }];
             }
             

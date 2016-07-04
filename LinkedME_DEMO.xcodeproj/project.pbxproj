@@ -697,6 +697,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkedME_DEMO/LinkedME_DEMO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_DEMO",
@@ -711,7 +712,7 @@
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedMEDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -724,6 +725,7 @@
 				CODE_SIGN_ENTITLEMENTS = LinkedME_DEMO/LinkedME_DEMO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_DEMO",
@@ -738,7 +740,7 @@
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/Wechat",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
+				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedMEDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
