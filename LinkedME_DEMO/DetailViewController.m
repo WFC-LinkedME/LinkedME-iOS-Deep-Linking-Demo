@@ -47,7 +47,6 @@ static NSString * LINKEDME_SHORT_URL;
     _openUrl = [data objectForKey:@"tag"];
 }
 
-
 - (void)initData{
     NSString *Plist=[[NSBundle mainBundle] pathForResource:@"DefaultData" ofType:@"plist"];
     arr = [[NSArray alloc]initWithContentsOfFile:Plist];
@@ -77,12 +76,11 @@ static NSString * LINKEDME_SHORT_URL;
     if (LINKEDME_SHORT_URL.length != 0) {
         //初始化社会化分享
         
-        
         [UMSocialSnsService presentSnsIconSheetView:self
                                              appKey:@"560fce13e0f55a730c003844"
                                           shareText:summary
                                          shareImage:[UIImage imageNamed:@"share_logo.png"]
-                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToSms,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToEmail, nil]
+                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToSms,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToEmail,UMShareToWechatSession, nil]
                                            delegate:self];
         
     }
@@ -98,9 +96,7 @@ static NSString * LINKEDME_SHORT_URL;
 }
 
 //创建短链
-//创建短链
 -(void)addPara{
-    
     self.linkedUniversalObject = [[LMUniversalObject alloc] init];
     self.linkedUniversalObject.title = title;//标题
     

@@ -36,11 +36,19 @@
             //Router
             //获取标题
             NSString *title = [params objectForKey:@"$og_title"];
-            NSString *tag = params[@"$control"][@"ViewId"];
+            NSString *tag;
+            @try {
+                 tag = params[@"$control"][@"ViewId"];
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
+            }
           
             //使用自动跳转
             if ([title isEqualToString:@"DetailViewController"]) {
                 //通过标题跳转当详细页面，customValue跳转的参数
+                
                 [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
 
                 }];
