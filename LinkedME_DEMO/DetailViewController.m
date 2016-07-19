@@ -50,8 +50,9 @@ static NSString * LINKEDME_SHORT_URL;
 - (void)initData{
     NSString *Plist=[[NSBundle mainBundle] pathForResource:@"DefaultData" ofType:@"plist"];
     arr = [[NSArray alloc]initWithContentsOfFile:Plist];
+    
     if (!deepLinking) {
-        _openUrl = arr[page][@"url"];
+        _openUrl = [NSString stringWithFormat:@"%@%@",arr[page][@"url"],[LMPreferenceHelper preferenceHelper].linedMEKey];
     }
     [self loadString:_openUrl];
     title = arr[page][@"key"];
@@ -120,14 +121,11 @@ static NSString * LINKEDME_SHORT_URL;
             //前面是Html5页面,后面拼上深度链接https://xxxxx.xxx (html5 页面地址) ?linkedme=(深度链接)
             //https://www.linkedme.cc/h5/feature?linkedme=https://lkme.cc/AfC/mj9H87tk7
             LINKEDME_SHORT_URL = [H5_LIVE_URL stringByAppendingString:url];
-            
         } else {
             LINKEDME_SHORT_URL = H5_LIVE_URL;
         }
     }];
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

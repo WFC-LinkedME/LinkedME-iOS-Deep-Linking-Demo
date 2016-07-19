@@ -27,10 +27,9 @@
  @param longitude The longitude of the location.
  */
 + (instancetype)locationWithPickupName:(NSString *)pname
-                           dropoffName:(NSString *)dname
-                                pickup:(CLLocationCoordinate2D)pickup
-                               dropoff:(CLLocationCoordinate2D)drop;
-
+                                   dropoffName:(NSString *)dname
+                                        pickup:(CLLocationCoordinate2D)pickup
+                                       dropoff:(CLLocationCoordinate2D)drop;
 
 /**
  Returns a location instance.

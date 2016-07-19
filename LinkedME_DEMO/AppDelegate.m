@@ -18,9 +18,9 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.' //初始化及实例
+    // Override point for customization after application launch.'
+    //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
 //    [linkedme setDebug];
 
@@ -44,7 +44,7 @@
             } @finally {
                 
             }
-          
+
             //使用自动跳转
             if ([title isEqualToString:@"DetailViewController"]) {
                 //通过标题跳转当详细页面，customValue跳转的参数
@@ -53,12 +53,10 @@
 
                 }];
             }
-            
             //手动跳转
             //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
             // 传递自定义参数
             //featureVC.xxx = params[@"$control"][@"ViewId"];
-            
         } else {
             NSLog(@"LinkedME failed init: %@", error);
         }
@@ -78,9 +76,8 @@
 //URI Scheme 实现深度链接技术
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
     NSLog(@"opened app from URL %@", [url description]);
-    return [[LinkedME getInstance] handleDeepLink:url];
+    return [[LinkedME getInstance] handleDeepLink:url];;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

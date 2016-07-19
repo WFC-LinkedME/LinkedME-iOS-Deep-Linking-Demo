@@ -38,6 +38,7 @@
 @property (assign, nonatomic) NSTimeInterval retryInterval;
 @property (assign, nonatomic) NSTimeInterval timeout;
 @property (strong, nonatomic) NSString *externalIntentURI;
+@property (strong, nonatomic) NSString *sdk_version;
 
 + (LMPreferenceHelper *)preferenceHelper;
 
@@ -63,8 +64,7 @@
 
 - (void)setActionTotalCount:(NSString *)action withCount:(NSInteger)count;
 - (void)setActionUniqueCount:(NSString *)action withCount:(NSInteger)count;
-- (NSInteger)getActionTotalCount:(NSString *)action;
-- (NSInteger)getActionUniqueCount:(NSString *)action;
+
 
 - (void)log:(NSString *)filename line:(int)line message:(NSString *)format, ...;
 

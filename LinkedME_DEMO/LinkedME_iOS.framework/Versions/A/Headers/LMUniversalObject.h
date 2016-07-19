@@ -57,21 +57,9 @@ typedef NS_ENUM(NSInteger, ContentIndexMode) {
 //通过LMLinkProperties获得短链接
 - (NSString *)getShortUrlWithLinkProperties:(LMLinkProperties *)linkProperties;
 //通过LMLinkProperties获得短链接并忽略第一次点击
-- (NSString *)getShortUrlWithLinkPropertiesAndIgnoreFirstClick:(LMLinkProperties *)linkProperties;
+//- (NSString *)getShortUrlWithLinkPropertiesAndIgnoreFirstClick:(LMLinkProperties *)linkProperties;
 //通过LMLinkProperties获得短链接Block形式
 - (void)getShortUrlWithLinkProperties:(LMLinkProperties *)linkProperties andCallback:(callbackWithUrl)callback;
-
-//通过LMLinkProperties获取活动连接
-- (UIActivityItemProvider *)getBranchActivityItemWithLinkProperties:(LMLinkProperties *)linkProperties;
-
-// - (方法已弃用,使用[showShareSheetWithShareText:completion:]替代)
-- (void)showShareSheetWithShareText:(NSString *)shareText andCallback:(callback)callback __attribute__((deprecated(("方法已弃用,使用[showShareSheetWithShareText:completion:]替代."))));
-- (void)showShareSheetWithLinkProperties:(LMLinkProperties *)linkProperties andShareText:(NSString *)shareText fromViewController:(UIViewController *)viewController andCallback:(callback)callback __attribute__((deprecated(("方法已弃用,使用 -[showShareSheetWithLinkProperties:andShareText:fromViewController:viewController:completion:] instead替代."))));
-//分享和展示文本
-- (void)showShareSheetWithShareText:(NSString *)shareText completion:(shareCompletion)completion;
-- (void)showShareSheetWithLinkProperties:(LMLinkProperties *)linkProperties andShareText:(NSString *)shareText fromViewController:(UIViewController *)viewController completion:(shareCompletion)completion;
-//iPad
-- (void)showShareSheetWithLinkProperties:(LMLinkProperties *)linkProperties andShareText:(NSString *)shareText fromViewController:(UIViewController *)viewController anchor:(UIBarButtonItem *)anchor completion:(shareCompletion)completion;
 
 - (void)listOnSpotlight;
 - (void)listOnSpotlightWithCallback:(callbackWithUrl)callback;
