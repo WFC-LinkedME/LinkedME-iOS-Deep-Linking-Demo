@@ -8,12 +8,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LMServerInterface.h"
-#import "LMServerRequestQueue.h"
 #import "LMLinkCache.h"
 #import "LMDeepLinkingController.h"
-//#import "LMPreferenceHelper.h"
-//#import "LMBaseEntity.h"
-//#import "LMSLocation.h"
 
 @class LMUniversalObject;
 @class LMLinkProperties;
@@ -467,7 +463,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /**
  Method used by external LKME libs to initiate server requests
  */
-- (void)executeGenericRequest:(LMServerRequest*)request;
+//- (void)executeGenericRequest:(LMServerRequest*)request;
 
 //- (void)getButton:(LMContext *)context andButtonId:(NSString *)buttonId
 //       completion:(CompletionHandler)completionHandler andInnerCallBack:(innerCallBack) innerCallBack;

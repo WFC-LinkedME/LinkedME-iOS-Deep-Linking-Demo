@@ -79,7 +79,7 @@ static NSString * LINKEDME_SHORT_URL;
         
         [UMSocialSnsService presentSnsIconSheetView:self
                                              appKey:@"560fce13e0f55a730c003844"
-                                          shareText:summary
+                                          shareText:LINKEDME_SHORT_URL
                                          shareImage:[UIImage imageNamed:@"share_logo.png"]
                                     shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToSms,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToEmail,UMShareToWechatSession, nil]
                                            delegate:self];

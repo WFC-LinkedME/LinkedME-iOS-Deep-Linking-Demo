@@ -30,9 +30,11 @@ DefaultData | 参数默认必要参数
 注：为了iOS/Android/Web三端更好的统一，和版本迭代更新
 
 ## 1.1. Framework
-	1.CoreSpotlight.framework
+	1.CoreSpotlight.framework (status:Optional)
 	2.SystemConfiguration.framework
 	3.Security.framework
+	
+	注:CoreSpotlight.framework必须标记为可选
 
 # 2.注册用户
 1. 注册用户，并登陆系统
@@ -117,38 +119,54 @@ DefaultData | 参数默认必要参数
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.'
-    
+    //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
-
-    //是否开启Debug模式
-    //[linkedme setDebug];
     
+    //    //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    DetailViewController  *dvc=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
     
-    DetailViewController  *featureVC=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
-
-    [linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
+    //如果使用自动跳转需要注册viewController
+    //    [linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
     
     //获取跳转参数
     [linkedme initSessionWithLaunchOptions:launchOptions automaticallyDisplayDeepLinkController:NO deepLinkHandler:^(NSDictionary* params, NSError* error) {
         if (!error) {
+            @try {
             NSLog(@"LinkedME finished init with params = %@",[params description]);
-            //Router
+            //获取标题
             NSString *title = [params objectForKey:@"$og_title"];
-            NSString *tag = params[@"$control"][@"ViewId"];
-            
-            if ([title isEqualToString:@"DetailViewController"]) {
+                if ([title isEqualToString:@"DetailViewController"]) {
+                    dvc.openUrl = params[@"$control"][@"ViewId"];
+                    [[LinkedME getViewController] showViewController:dvc sender:nil];
+                }
                 
-                [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
-                    
-                }];
+            } @catch (NSException *exception) {
+                
+            } @finally {
+                
             }
+            
+            //使用自动跳转
+            //            if ([title isEqualToString:@"DetailViewController"]) {
+            //                //通过标题跳转当详细页面，customValue跳转的参数
+            //
+            //                [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
+            //
+            //                }];
+            //            }
+            
+            //手动跳转
+            //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
+            // 传递自定义参数
+            //featureVC.xxx = params[@"$control"][@"ViewId"];
+            
         } else {
             NSLog(@"LinkedME failed init: %@", error);
         }
-     }];
-      return YES;
-	}
+    }];
+    return YES;
+}
 ```
 
 ### Swift
