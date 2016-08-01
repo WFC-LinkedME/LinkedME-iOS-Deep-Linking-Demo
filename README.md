@@ -85,7 +85,7 @@ DefaultData | 参数默认必要参数
 	1.打开info.plist
 	2.找到URL Types（如果没有就右键add row添加一个）
 	3.添加"you app"(你的app的唯一标识字符串)
-![URL Scheme](https://www.linkedme.cc/docs/images/4.1.5.jpg)
+![URL Scheme](http://7xq8b0.com1.z0.glb.clouddn.com/1.jpg)
 
 
 	
@@ -95,7 +95,7 @@ DefaultData | 参数默认必要参数
 	2.选择'Capabilities'标签
 	3.打开'Associated Domains'开关
 	4.添加applinks:lkme.cc和applinks:www\.lkme\.cc
-![Associated Domains set up](https://www.linkedme.cc/docs/images/4.1.6.jpg)
+![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/2.jpg)
 
 
 # 5.代码集成
@@ -106,7 +106,8 @@ DefaultData | 参数默认必要参数
 	3.创建一个新的item名称为linkedme_key类型为Dictionary。
 	4.在linkedme_key新增两个字符串类型的item分别为live和test
 
-![lmkey set up](https://www.linkedme.cc/docs/images/4.1.7.jpg)
+![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/3.jpg
+)
 
 ## 5.2 设置AppDelegate
 ### 5.2.1 解析深度链接跳转参数
