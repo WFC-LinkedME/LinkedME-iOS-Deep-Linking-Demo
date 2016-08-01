@@ -85,8 +85,7 @@ DefaultData | 参数默认必要参数
 	1.打开info.plist
 	2.找到URL Types（如果没有就右键add row添加一个）
 	3.添加"you app"(你的app的唯一标识字符串)
-![URL Scheme](http://7xq8b0.com1.z0.glb.clouddn.com/1.jpg)
-
+![urltypes set up](https://camo.githubusercontent.com/f763b14111fbf591bf8cb45de5e884d3b68cd46d/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f6272616e6368686f73742f75726c536368656d652e706e67)
 
 	
 	
@@ -95,7 +94,7 @@ DefaultData | 参数默认必要参数
 	2.选择'Capabilities'标签
 	3.打开'Associated Domains'开关
 	4.添加applinks:lkme.cc和applinks:www\.lkme\.cc
-![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/2.jpg)
+![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/ass.png)
 
 
 # 5.代码集成
@@ -106,8 +105,7 @@ DefaultData | 参数默认必要参数
 	3.创建一个新的item名称为linkedme_key类型为Dictionary。
 	4.在linkedme_key新增两个字符串类型的item分别为live和test
 
-![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/3.jpg
-)
+![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/lmkey.png)
 
 ## 5.2 设置AppDelegate
 ### 5.2.1 解析深度链接跳转参数
@@ -215,7 +213,6 @@ DefaultData | 参数默认必要参数
 
 #####实现自定义跳转必须注册ViewController遵循LMDeepLinkingController协议<br> 并实现 - (void)configureControlWithData:(NSDictionary *)data方法</br>
 ### 4.2.2 添加URLScheme和Uniiversal LinKing支持
-
 ####　在Appdelegate中实现下列方法
 ###OC
 
