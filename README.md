@@ -232,7 +232,7 @@ DefaultData | 参数默认必要参数
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
     
     //判断是否是通过LinkedME的Universal Links唤起App
-    if ([[userActivity.webpageURL description] rangeOfString:@"lkme"].location != NSNotFound) {
+    if ([[userActivity.webpageURL description] rangeOfString:@"lkme.cc"].location != NSNotFound) {
         return  [[LinkedME getInstance] continueUserActivity:userActivity];
     }
     
@@ -270,7 +270,7 @@ DefaultData | 参数默认必要参数
  //Universal Links 通用链接实现深度链接技术
     func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
         //判断是否是通过LinkedME的Universal Links唤起App
-        if url.absoluteString.componentsSeparatedByString("lkme").count > 1 {
+        if url.absoluteString.componentsSeparatedByString("lkme.cc").count > 1 {
             return LinkedME.getInstance().continueUserActivity(userActivity);
         }
     }

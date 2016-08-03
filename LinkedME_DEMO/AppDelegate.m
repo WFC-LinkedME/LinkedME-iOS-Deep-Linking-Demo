@@ -82,7 +82,7 @@
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
     
     //判断是否是通过LinkedME的Universal Links唤起App
-    if ([[userActivity.webpageURL description] rangeOfString:@"lkme"].location != NSNotFound) {
+    if ([[userActivity.webpageURL description] rangeOfString:@"lkme.cc"].location != NSNotFound) {
         return  [[LinkedME getInstance] continueUserActivity:userActivity];
     }
     
