@@ -216,17 +216,27 @@ DefaultData | 参数默认必要参数
 ####　在Appdelegate中实现下列方法
 ###OC
 
-
 ```objc
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation{
-	  return [[LinkedME getInstance] handleDeepLink:url];
+    //判断是否是通过LinkedME的UrlScheme唤起App
+    if ([[url description] rangeOfString:@"click_id"].location != NSNotFound) {
+        return [[LinkedME getInstance] handleDeepLink:url];
+    }
+    
+    return YES;
 }
 ```
 	
 ```objc
 //Universal Links 通用链接实现深度链接技术
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
-    return  [[LinkedME getInstance] continueUserActivity:userActivity];
+    
+    //判断是否是通过LinkedME的Universal Links唤起App
+    if ([[userActivity.webpageURL description] rangeOfString:@"lkme"].location != NSNotFound) {
+        return  [[LinkedME getInstance] continueUserActivity:userActivity];
+    }
+    
+    return YES;
 }
 ```
 	
@@ -234,29 +244,45 @@ DefaultData | 参数默认必要参数
 //URI Scheme 实现深度链接技术
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
     NSLog(@"opened app from URL %@", [url description]);
-    return [[LinkedME getInstance] handleDeepLink:url];
+    
+    //判断是否是通过LinkedME的UrlScheme唤起App
+    if ([[url description] rangeOfString:@"click_id"].location != NSNotFound) {
+        return [[LinkedME getInstance] handleDeepLink:url];
+    }
+    return YES;
 }
 ```
 
 ###Swift
 
 ```swift
-func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return LinkedME.getInstance().handleDeepLink(url);
-    }
-```
-	
-```swift
-//Universal Links 通用链接实现深度链接技术
-func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
-        return LinkedME.getInstance().continueUserActivity(userActivity);
-    }
-```
-	
-```swift
 //URI Scheme 实现深度链接技术
-func  application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
-        return LinkedME.getInstance().handleDeepLink(url);
+ func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+    //判断是否是通过LinkedME的UrlScheme唤起App
+        if url.absoluteString.componentsSeparatedByString("click_id").count > 1 {
+            return LinkedME.getInstance().handleDeepLink(url);
+        }
+
+    }
+```
+	
+```swift
+ //Universal Links 通用链接实现深度链接技术
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        //判断是否是通过LinkedME的Universal Links唤起App
+        if url.absoluteString.componentsSeparatedByString("lkme").count > 1 {
+            return LinkedME.getInstance().continueUserActivity(userActivity);
+        }
+    }
+```
+	
+```swift
+    //URI Scheme 实现深度链接技术
+    func  application(app: UIApplication, openURL url: NSURL, options: [String : AnyObject]) -> Bool {
+        //判断是否是通过LinkedME的UrlScheme唤起App
+        if url.absoluteString.componentsSeparatedByString("click_id").count > 1 {
+            return LinkedME.getInstance().handleDeepLink(url);
+        }
     }
 ```
 	
@@ -297,7 +323,7 @@ func  application(app: UIApplication, openURL url: NSURL, options: [String : Any
 #Debug模式
 # 5实现自定义跳转方法（传参）
 ![reg view0](http://7xq8b0.com1.z0.glb.clouddn.com/deeplinking.png)
-![reg view](http://7xq8b0.com1.z0.glb.clouddn.com/mothed.png)
+![reg view](http://7xq8b0.com1.z0.glb.clouddn.com/mothed.png )
 
 
 
