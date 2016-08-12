@@ -20,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.'
+    
     //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
     
@@ -27,29 +28,23 @@
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     DetailViewController  *dvc=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
     
-    //如果使用自动跳转需要注册viewController
+    //[自动跳转]如果使用自动跳转需要注册viewController
     //    [linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
-    
+ 
+#warning 必须实现
     //获取跳转参数
     [linkedme initSessionWithLaunchOptions:launchOptions automaticallyDisplayDeepLinkController:NO deepLinkHandler:^(NSDictionary* params, NSError* error) {
         if (!error) {
+            //防止传递参数出错取不到数据,导致App崩溃这里一定要用try catch
             @try {
             NSLog(@"LinkedME finished init with params = %@",[params description]);
             //获取标题
             NSString *title = [params objectForKey:@"$og_title"];
             NSString *tag = params[@"$control"][@"View"];
-//                if ([title isEqualToString:@"DetailViewController"]) {
-
-//                }
-//                
-
-                if([title isEqual:@"LinkedME"]){
+                
+                if (title.length >0 && tag.length >0) {
                     
-                    UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"通过Spotlight打开" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-                    
-                    [alertView show];
-                    
-                }else if (title.length >0 && tag.length >0) {
+                    //[自动跳转]使用自动跳转
                     //SDK提供的跳转方法
                     /**
                      *  pushViewController : 类名
@@ -60,30 +55,16 @@
                      *warning  需要在被跳转页中实现次方法 - (void)configureControlWithData:(NSDictionary *)data;
                      */
 
-                    [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
-//
-                    }];
+//                    [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
+///
+//                    }];
                     
                     //自定义跳转
                     dvc.openUrl = params[@"$control"][@"ViewId"];
                     [[LinkedME getViewController] showViewController:dvc sender:nil];
                     
                 }
-
-            
-            //使用自动跳转
-            //            if ([title isEqualToString:@"DetailViewController"]) {
-            //                //通过标题跳转当详细页面，customValue跳转的参数
-            //
-            //                [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
-            //
-            //                }];
-            //            }
-            
-            //手动跳转
-            //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
-            // 传递自定义参数
-            //featureVC.xxx = params[@"$control"][@"ViewId"];
+                
                             } @catch (NSException *exception) {
                 
                             } @finally {
@@ -97,6 +78,7 @@
     return YES;
 }
 
+#warning 必须实现
 - (BOOL)application:(UIApplication*)application openURL:(NSURL*)url sourceApplication:(NSString*)sourceApplication annotation:(id)annotation{
     //判断是否是通过LinkedME的UrlScheme唤起App
     if ([[url description] rangeOfString:@"click_id"].location != NSNotFound) {
@@ -106,6 +88,7 @@
     return YES;
 }
 
+#warning 必须实现
 //Universal Links 通用链接实现深度链接技术
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
     
@@ -117,6 +100,7 @@
     return YES;
 }
 
+#warning 必须实现
 //URI Scheme 实现深度链接技术
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{
     NSLog(@"opened app from URL %@", [url description]);
