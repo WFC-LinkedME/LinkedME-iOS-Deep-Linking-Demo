@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "DetailViewController.h"
 #import "DemoViewController.h"
+#import <LinkedME_iOS/LinkedME.h>
+
 
 @interface ViewController ()
 
@@ -18,7 +20,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.   
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    //关键字
+    NSSet *set5 = [NSSet setWithObjects:@"linkedme",@"linked",@"深度链接", nil];
+    //链接参数
+    NSDictionary *dict = @{@"url":@"http://linkedme.cc"};
+    
+    /*
+     *  @param title             标题
+     *  @param description       描述
+     *  @param publiclyIndexable 是否公开
+     *  @param type              类型
+     *  @param thumbnailUrl      缩略图Url
+     *  @param keywords          关键字
+     *  @param userInfo          用户详情
+     *  @param expirationDate    失效日期,设置失效日期会自动删除索引
+     *  @param identifier        标志符
+     *  @param callback          回调
+     *  @param spotlightCallback Spotlight回掉
+     */
+    
+    [[LinkedME getInstance] createDiscoverableContentWithTitle:@"LinkedME 国内第一家企业级深度链接"
+                                                   description:@"让APP不再是信息孤岛!"
+                                                  thumbnailUrl:[NSURL URLWithString:@"http://7xq8b0.com1.z0.glb.clouddn.com/logo.png"]
+                                                    linkParams:dict
+                                                          type:@""
+                                             publiclyIndexable:NO keywords:set5
+                                                expirationDate:nil
+                                           spotlightIdentifier:@"bbcc"
+                                             spotlightCallback:^(NSString *url, NSString *spotlightIdentifier, NSError *error) {
+        
+    }];
+    
+    
+    //删除Spotlight item,在特定条件下触发
+    //删除所有条目
+    //[LinkedME removeAllSearchItems];
+    //根据identifier删除
+    //[LinkedME removeSearchItemWith:@[@"bbcc"]];
 }
 
 - (void)didReceiveMemoryWarning {

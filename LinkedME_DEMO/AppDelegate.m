@@ -37,16 +37,39 @@
             NSLog(@"LinkedME finished init with params = %@",[params description]);
             //获取标题
             NSString *title = [params objectForKey:@"$og_title"];
-                if ([title isEqualToString:@"DetailViewController"]) {
+            NSString *tag = params[@"$control"][@"View"];
+//                if ([title isEqualToString:@"DetailViewController"]) {
+
+//                }
+//                
+
+                if([title isEqual:@"LinkedME"]){
+                    
+                    UIAlertView * alertView = [[UIAlertView alloc]initWithTitle:@"提示" message:@"通过Spotlight打开" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    
+                    [alertView show];
+                    
+                }else if (title.length >0 && tag.length >0) {
+                    //SDK提供的跳转方法
+                    /**
+                     *  pushViewController : 类名
+                     *  storyBoardID : 需要跳转的页面的storyBoardID
+                     *  animated : 是否开启动画
+                     *  customValue : 传参
+                     *
+                     *warning  需要在被跳转页中实现次方法 - (void)configureControlWithData:(NSDictionary *)data;
+                     */
+
+                    [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
+//
+                    }];
+                    
+                    //自定义跳转
                     dvc.openUrl = params[@"$control"][@"ViewId"];
                     [[LinkedME getViewController] showViewController:dvc sender:nil];
+                    
                 }
-                
-            } @catch (NSException *exception) {
-                
-            } @finally {
-                
-            }
+
             
             //使用自动跳转
             //            if ([title isEqualToString:@"DetailViewController"]) {
@@ -61,6 +84,11 @@
             //[[LinkedME getViewController].navigationController pushViewController:featureVC animated:YES];
             // 传递自定义参数
             //featureVC.xxx = params[@"$control"][@"ViewId"];
+                            } @catch (NSException *exception) {
+                
+                            } @finally {
+                
+                            }
             
         } else {
             NSLog(@"LinkedME failed init: %@", error);

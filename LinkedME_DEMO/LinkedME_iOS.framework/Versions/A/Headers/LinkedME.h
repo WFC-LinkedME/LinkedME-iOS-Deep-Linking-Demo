@@ -122,12 +122,6 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 + (LinkedME *)getInstance;
 
 /**
- 测试版
- @warning 上线时请不用使用Test!
- */
-+ (LinkedME *)getTestInstance;
-
-/**
  获取LinkedME实例、配置linkedMeKey
  
  @param 必要参数.

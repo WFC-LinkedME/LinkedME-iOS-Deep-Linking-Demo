@@ -103,9 +103,9 @@ DefaultData | 参数默认必要参数
 	1.打开info.plist文件
 	2.在列表中点击右键选择add row添加一个分组
 	3.创建一个新的item名称为linkedme_key类型为Dictionary。
-	4.在linkedme_key新增两个字符串类型的item分别为live和test
+	4.在linkedme_key新增一个字符串类型的item,live字段
 
-![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/lmkey.png)
+![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/keyyy.png)
 
 ## 5.2 设置AppDelegate
 ### 5.2.1 解析深度链接跳转参数
@@ -321,11 +321,108 @@ DefaultData | 参数默认必要参数
 }
 ```
 #Debug模式
-# 5实现自定义跳转方法（传参）
+>在Debug模式下会打印日志
+
+##OC
+  [linkedme setDebug];
+
+##Swift
+  linkedme.setDebug();
+  
+  
+#测试模式
+>在后台(Dashboard)中-设置-测试-添加测试设备
+
+##OC
+通过[LinkedME getTestID]获取设备ID,去后台中添加设备
+
+##Swift
+通过LinkedME.getTestID()获取设备ID,去后台中添加设备
+
+
+# 5.实现自定义跳转方法（传参）
 ![reg view0](http://7xq8b0.com1.z0.glb.clouddn.com/deeplinking.png)
 ![reg view](http://7xq8b0.com1.z0.glb.clouddn.com/mothed.png )
 
+# 6.Spotlight
+##6.1创建Spotlight索引
+###OC
+```objc
+[[LinkedME getInstance] createDiscoverableContentWithTitle:@"LinkedME 国内第一家企业级深度链接"
+                                                   description:@"让APP不再是信息孤岛!"
+                                                  thumbnailUrl:[NSURL URLWithString:@"http://7xq8b0.com1.z0.glb.clouddn.com/logo.png"]
+                                                    linkParams:dict
+                                                          type:@""
+                                             publiclyIndexable:NO keywords:set5
+                                                expirationDate:nil
+                                           spotlightIdentifier:@"bbcc"
+                                             spotlightCallback:^(NSString *url, NSString *spotlightIdentifier, NSError *error) {
+        
+    }];
+```
 
+### Swift
+```swift
+	LinkedME.getInstance().createDiscoverableContentWithTitle("LinkedME 国内第一家企业级深度链接",
+                                                                  description: "让APP不再是信息孤岛!",
+                                                                  thumbnailUrl: NSURL.init(string: "http://7xq8b0.com1.z0.glb.clouddn.com/logo.png"),
+                                                                  linkParams: dic,
+                                                                  type: nil,
+                                                                  publiclyIndexable: false,
+                                                                  keywords: keyWord as NSSet as Set<NSObject>,
+                                                                  expirationDate: nil,
+                                                                  spotlightIdentifier: "linkedme") { (url, spotlightID, error) in
+                                                                    
+        }
+```
+
+>设置关键字
+ 
+### OC
+```objc
+    NSSet *keyWord = [NSSet setWithObjects:@"linkedme", nil];
+```
+### Swift
+```swift
+	let keyWord = NSSet.init(array: ["linkedme","hellolkm"])
+```
+
+
+>需要传递的参数
+
+
+
+###OC
+
+```objc
+	NSSet *set5 = [NSSet 	setWithObjects:@"linkedme",@"linked",@"深度链接", nil];
+```
+###Swift
+```swift
+	let dic = ["url":"http://linkedme.cc"]
+```
+
+>关键字详解
+
+| title  | 标题 
+| --- | --- | 
+| description | 描述 
+|publiclyIndexable| 是否公开
+|type             | 类型
+|thumbnailUrl     | 缩略图Url
+|keywords         | 关键字
+|userInfo         | 用户详情
+|expirationDate   | 失效日期,设置失效日期会自动删除索引
+|identifier       | 标志符
+|callback         | 回调
+|spotlightCallback| Spotlight回掉
+
+##6.2删除索引
+###6.2.1删除所有索引
+[LinkedME removeAllSearchItems];
+
+###6.2.2通过spotlightIdentifier删除索引
+[LinkedME removeSearchItemWith:@[@"bbcc"]];
 
 
 
