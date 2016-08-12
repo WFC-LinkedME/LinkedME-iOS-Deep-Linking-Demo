@@ -419,10 +419,25 @@ DefaultData | 参数默认必要参数
 
 ##6.2删除索引
 ###6.2.1删除所有索引
+#### OC
+```objc
 [LinkedME removeAllSearchItems];
+```
+
+#### Swift
+```swift        LinkedME.removeAllSearchItems();
+```
 
 ###6.2.2通过spotlightIdentifier删除索引
-[LinkedME removeSearchItemWith:@[@"bbcc"]];
+#### OC
+```objc
+[LinkedME removeSearchItemWith:@[@"linkedme"]];
+```
+
+#### Swift
+```swift 
+LinkedME.removeSearchItemWith(["linkedme"])
+```
 
 
 
