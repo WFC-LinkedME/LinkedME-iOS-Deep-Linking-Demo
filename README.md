@@ -5,17 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 
-## Installation
 
-LinkedME_iOS is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod "LinkedME_iOS"
-```
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 # 1.下载SDK&Demo（简述）
 ![sdkinfo set up](http://7xq8b0.com1.z0.glb.clouddn.com/sdk_info.png)
