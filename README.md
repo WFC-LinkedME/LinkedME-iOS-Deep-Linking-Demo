@@ -29,7 +29,7 @@ DefaultData | 参数默认必要参数
 ![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
 
 # 2.注册用户
-1. 注册用户，并登陆系统
+1. [注册用户](http://linkedme.cc/)，并登陆系统
 
 ![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/register1.png)
 
