@@ -284,37 +284,34 @@ DefaultData | 参数默认必要参数
 ```
 	
 #（创建深度连接）
-```
+```objc
+//创建短链
 -(void)addPara{
-    self.branchUniversalObject = [[LKMEUniversalObject alloc] initWithCanonicalIdentifier:@"item/12345"];//标识符
-    self.branchUniversalObject.title = @"My Content Title";//标题
-    self.branchUniversalObject.contentDescription = @"My Content Description";//描述
-    self.branchUniversalObject.imageUrl = @"https://s3-us-west-1.amazonaws.com/branchhost/mosaic_og.png";//图片地址
-    [self.branchUniversalObject addMetadataKey:@"custom_key1" value:@"some custom data"];
-    [self.branchUniversalObject //自定义keyaddMetadataKey:@"custom_key2" value:@"more custom data"];
-    
-    LKMELinkProperties *linkProperties = [[LKMELinkProperties alloc] init];
-    linkProperties.feature = @"wechat";
-    linkProperties.channel = @"wechat";//渠道
-    linkProperties.tags=@[@"111211",@"12333"];//标签
-    linkProperties.alias = @"jump";//别名
-    linkProperties.stage = @"normal";//阶段
-    
-    [linkProperties addControlParam:@"$desktop_url" withValue:@"http://example.com/home"];
-    [linkProperties addControlParam:@"$ios_url" withValue:@"http://example.com/ios"];
-    
-        [linkProperties setAndroidPathControlParam:@"feature"];
-        [linkProperties setIOSKeyControlParam:@"feature"];
+    self.linkedUniversalObject = [[LMUniversalObject alloc] init];
+    self.linkedUniversalObject.title = title;//标题
+    LMLinkProperties *linkProperties = [[LMLinkProperties alloc] init];
+    linkProperties.channel = @"";//渠道(微信,微博,QQ,等...)
+    linkProperties.feature = @"Share Wechat1";//特点
+    linkProperties.tags=@[@"LinkedME",@"Demo"];//标签
+    linkProperties.stage = @"Live";//阶段
 
-    [self.branchUniversalObject getShortUrlWithLinkProperties:linkProperties andCallback:^(NSString *url, NSError *err) {
-        //  这里的url就是得到的短链 
-        if (err == nil) {
-            NSLog(@"LinkedMe SDK creates the url is:%@", url);
-            LINKEDME_SHORT_URL = [H5_URL stringByAppendingString:url];
+    [linkProperties addControlParam:@"View" withValue:arr[page][@"url"]];//页面唯一标识
+    [linkProperties addControlParam:@"LinkedME" withValue:@"Demo"];//Demo标识
+    
+    [self.linkedUniversalObject getShortUrlWithLinkProperties:linkProperties andCallback:^(NSString *url, NSError *err) {
+        if (url) {
+            NSLog(@"[LinkedME Info] SDK creates the url is:%@", url);
+            //
+            [H5_LIVE_URL stringByAppendingString:arr[page][@"form"]];
+            [H5_LIVE_URL stringByAppendingString:@"?linkedme="];
+            
+            H5_LIVE_URL = [NSString stringWithFormat:@"https://www.linkedme.cc/h5/%@?linkedme=",arr[page][@"form"]];
+            _LINKEDME_SHORT_URL = [H5_LIVE_URL stringByAppendingString:url];
+            
         } else {
-            LINKEDME_SHORT_URL = H5_URL;
+            _LINKEDME_SHORT_URL = H5_LIVE_URL;
         }
-    }]; 
+    }];
 }
 ```
 #Debug模式
