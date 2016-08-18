@@ -67,14 +67,14 @@ DefaultData | 参数默认必要参数
 `1` 打开info.plist
 `2` 找到URL Types（如果没有就右键add row添加一个）
 `3` 添加"you app"(你的app的唯一标识字符串)
-![urltypes set up](https://linkedme.cc/docs/images/4.1.5.jpg)
+![urltypes set up](http://7xq8b0.com1.z0.glb.clouddn.com/url_scheme.jpg)
 
 #5.1 添加Universal Linking支持 (仅支持iOS 9)*
 `1` 在左侧导航器中点击您的项目
 `2` 选择'Capabilities'标签
 `3` 打开'Associated Domains'开关
 `4` 添加applinks:lkme.cc和applinks:www\.lkme\.cc
-![Associated Domains set up](http://linkedme.cc/docs/images/4.1.6.jpg)
+![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/universal_link.jpg)
 	
 
 
