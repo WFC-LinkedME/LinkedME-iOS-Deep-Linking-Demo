@@ -23,7 +23,9 @@ LinkedME账号通用于我们提供的所有产品，登录官方网站进行[�
 ![设置app](https://www.linkedme.cc/docs/images/2.3.1.jpg)
 
 `1` 点击修改应用名字
+
 `2` 点击修改应用Logo
+
 `3` 点击删除应用
 
 >注意事项：如果误删应用后，请发邮件到support@linkedme.cc。
@@ -32,8 +34,11 @@ LinkedME账号通用于我们提供的所有产品，登录官方网站进行[�
 ![设置应用](https://www.linkedme.cc/docs/images/2.3.2.1-1.jpg)
 
 `1` 勾选“是否有iOS应用”项。
+
 `2` URI Scheme，点击输入框输入您的iOS应用的URI Scheme协议，示例：linkedmedemo
+
 `3` 下载地址，可以是AppStore上的下载地址，也可以自定义
+
 `4` Universal Links为iOS官方深度链接标准，iOS 9.0以上系统支持，可实现应用间无缝跳转。[访问苹果开发者网站](http://developer.apple.com/)，在Appid中查看Bundle ID和Prefix的值
 
 ![bundle id](http://7xq8b0.com1.z0.glb.clouddn.com/appid.png)
@@ -56,7 +61,9 @@ DefaultData | 参数默认必要参数
 #4. 添加系统Framework*
 
 `1`  CoreSpotlight.framework (status:Optional)
+
 `2`  SystemConfiguration.framework
+
 `3`  Security.framework
 	
 **注意事项:CoreSpotlight.framework必须标记为可选**	
@@ -65,14 +72,19 @@ DefaultData | 参数默认必要参数
 #5.注册URL Scheme（推荐/可选）
 
 `1` 打开info.plist
+
 `2` 找到URL Types（如果没有就右键add row添加一个）
+
 `3` 添加"you app"(你的app的唯一标识字符串)
 ![urltypes set up](http://7xq8b0.com1.z0.glb.clouddn.com/url_scheme.jpg)
 
 #5.1 添加Universal Linking支持 (仅支持iOS 9)*
 `1` 在左侧导航器中点击您的项目
+
 `2` 选择'Capabilities'标签
+
 `3` 打开'Associated Domains'开关
+
 `4` 添加applinks:lkme.cc和applinks:www\.lkme\.cc
 ![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/universal_link.jpg)
 	
@@ -80,8 +92,11 @@ DefaultData | 参数默认必要参数
 
 ## 5.2 添加linkedme_key
 `1` 打开info.plist文件
+
 `2` 在列表中点击右键选择add row添加一个分组
+
 `3` 创建一个新的item名称为linkedme_key类型为Dictionary
+
 `4` 在linkedme_key新增一个字符串类型的item, live字段，到后台“设置”->“应用”中进行[查看](http://linkedme.cc/dashboard/index.html#/app/changeapp)
 
 ![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/keyyy.png)
