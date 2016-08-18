@@ -485,8 +485,9 @@ LinkedME.removeSearchItemWith(["linkedme"])
 
 ![YOU+](http://7xq8b0.com1.z0.glb.clouddn.com/you1+.jpg)
 
-| Q | 为什么点击按钮可以直接从微信唤起app？ | 
+|  | 常见问题 | 
 | --- | --- | 
+|`Q`|为什么点击按钮可以直接从微信唤起app？|
 | A | 使用Universal Link技术，可以通过链接直接唤起app。|  
 ||
 |`Q:`|为什么右上角会出现lkme.cc？|
