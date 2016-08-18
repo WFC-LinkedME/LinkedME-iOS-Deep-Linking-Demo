@@ -4,11 +4,42 @@
 [![Version](https://img.shields.io/cocoapods/v/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![License](https://img.shields.io/cocoapods/l/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
+# 1.注册并添加应用
+##1.1注册账号
+LinkedME账号通用于我们提供的所有产品，登录官方网站进行[注册](http://linkedme.cc/),并登陆系统。
+
+##1.2 开通使用
+注册成功之后，即可登录使用。
+
+##1.3 创建应用
+>成功登录后台之后，可点击`+`按钮创建应用。
+![创建app](https://www.linkedme.cc/docs/images/2.2.1-1.jpg)
+
+输入APP名字之后，点击“创建APP”完成创建。可以到后台导航栏`设置`->`应用`中查看应用相关信息。
+![创建app](https://www.linkedme.cc/docs/images/2.2.1-2.jpg)
+
+##1.4 应用设置
+点击`设置`可以对应用进行设置。
+![设置app](https://www.linkedme.cc/docs/images/2.3.1.jpg)
+
+`1` 点击修改应用名字
+`2` 点击修改应用Logo
+`3` 点击删除应用
+
+>注意事项：如果误删应用后，请发邮件到support@linkedme.cc。
+
+## 1.5 设置应用
+![设置应用](https://www.linkedme.cc/docs/images/2.3.2.1-1.jpg)
+
+`1` 勾选“是否有iOS应用”项。
+`2` URI Scheme，点击输入框输入您的iOS应用的URI Scheme协议，示例：linkedmedemo
+`3` 下载地址，可以是AppStore上的下载地址，也可以自定义
+`4` Universal Links为iOS官方深度链接标准，iOS 9.0以上系统支持，可实现应用间无缝跳转。[访问苹果开发者网站](http://developer.apple.com/)，在Appid中查看Bundle ID和Prefix的值
+
+![bundle id](http://7xq8b0.com1.z0.glb.clouddn.com/appid.png)
 
 
-
-# 1.下载SDK&Demo（简述）
-![sdkinfo set up](http://7xq8b0.com1.z0.glb.clouddn.com/sdk_info.png)
+# 2.1 SDK&Demo（简述）
 
 文件名 | 描述
 ------------ | -------------
@@ -17,96 +48,52 @@ DetailViewController | Demo详情页-webView加载html网页
 DemoViewController | 生成短链，展示生成锻炼的必要参数 
 DefaultData | 参数默认必要参数 
 
-注：为了iOS/Android/Web三端更好的统一，和版本迭代更新
 
-## 1.1. Framework
-	1.CoreSpotlight.framework (status:Optional)
-	2.SystemConfiguration.framework
-	3.Security.framework
+#3.导入LinkedME iOS SDK(必须实现)*
+
+把Demo工程中的LinkedME_iOS.framework，导入工程中。
+
+#4. 添加系统Framework*
+
+`1`  CoreSpotlight.framework (status:Optional)
+`2`  SystemConfiguration.framework
+`3`  Security.framework
 	
-	注:CoreSpotlight.framework必须标记为可选
-	
+**注意事项:CoreSpotlight.framework必须标记为可选**	
 ![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
 
-# 2.注册用户
-1. [注册用户](http://linkedme.cc/)，并登陆系统
+#5.注册URL Scheme（推荐/可选）
 
-![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/register1.png)
+`1` 打开info.plist
+`2` 找到URL Types（如果没有就右键add row添加一个）
+`3` 添加"you app"(你的app的唯一标识字符串)
+![urltypes set up](https://linkedme.cc/docs/images/4.1.5.jpg)
 
-# 3.创建App生成linkedme_key
-1. 创建app
-
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/create_app11.png)
+#5.1 添加Universal Linking支持 (仅支持iOS 9)*
+`1` 在左侧导航器中点击您的项目
+`2` 选择'Capabilities'标签
+`3` 打开'Associated Domains'开关
+`4` 添加applinks:lkme.cc和applinks:www\.lkme\.cc
+![Associated Domains set up](http://linkedme.cc/docs/images/4.1.6.jpg)
 	
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/create_app22.png)
-
-2. 获取LinkedME Key
-
-	创建完App后，系统会分配一个LinkedME App ID、LinkedME Key和LinkedME Secret（无法修改）。
-	
-	如下图的红框2，就是LinkedME Key。
-
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/get_key.png)
 
 
-3. 设置App，分为两部分：概览和链接；其中概览部分只能修改app名称和修改LOGO。
-
-
-4. 设置App的链接部分
-
-	4.1 如果没有iOS应用，Directed URL框里填写深度链接默认跳转地址；
-	
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios1.png)
-	
-	4.2 如果有iOS应用，勾选有iOS应用的框，并填写App的URI Scheme；如果App在App Store上线了，请勾选“App Store”，并填写App在App Store上的地址；
-	
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios2.png)
-	
-	4.3 如果App没有在App Store上线，请勾选“自定义”，并填写App的ipc文件的下载地址；
-	
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios3.png)
-	
-	4.4 如果App支持Universal Links，请勾选“Universal Links”,并填写Bundle ID和Apple App Prefix。
-	
-	![image](http://o8fx2z8ev.bkt.clouddn.com/lkme/set_app_ios4.png)
-
-# 4.工程设置
-## 4.1 注册URLScheme（推荐/可选）
-	1.打开info.plist
-	2.找到URL Types（如果没有就右键add row添加一个）
-	3.添加"you app"(你的app的唯一标识字符串)
-![urltypes set up](https://camo.githubusercontent.com/f763b14111fbf591bf8cb45de5e884d3b68cd46d/68747470733a2f2f73332d75732d776573742d312e616d617a6f6e6177732e636f6d2f6272616e6368686f73742f75726c536368656d652e706e67)
-
-	
-	
-## 4.2 Universal Linking (仅支持iOS 9)
-	1.在左侧导航器中点击您的项目
-	2.选择'Capabilities'标签
-	3.打开'Associated Domains'开关
-	4.添加applinks:lkme.cc和applinks:www\.lkme\.cc
-![Associated Domains set up](http://7xq8b0.com1.z0.glb.clouddn.com/ass.png)
-
-
-# 5.代码集成
-
-## 5.1 添加linkedme_key
-	1.打开info.plist文件
-	2.在列表中点击右键选择add row添加一个分组
-	3.创建一个新的item名称为linkedme_key类型为Dictionary。
-	4.在linkedme_key新增一个字符串类型的item,live字段
+## 5.2 添加linkedme_key
+`1` 打开info.plist文件
+`2` 在列表中点击右键选择add row添加一个分组
+`3` 创建一个新的item名称为linkedme_key类型为Dictionary
+`4` 在linkedme_key新增一个字符串类型的item, live字段，到后台“设置”->“应用”中进行[查看](http://linkedme.cc/dashboard/index.html#/app/changeapp)
 
 ![lmkey set up](http://7xq8b0.com1.z0.glb.clouddn.com/keyyy.png)
 
-## 5.2 设置AppDelegate
-### 5.2.1 解析深度链接跳转参数
-### Objective-C
+# 6.代码集成 - 设置AppDelegate - 解析深度链接跳转参数*
 
-#####1.在AppDelegate中引入头文件 
+`1` 在AppDelegate中引入头文件
+> `import <LinkedME_iOS/LinkedME.h>`
 
-#####　`#import <LinkedME_iOS/LinkedME.h>`
+`2` 在Appdelegate里注册ViewController
 
-#####2.在Appdelegate里注册ViewController
-####　2.1配置注册vc设置及跳转方式
+####　6.1配置注册viewController并设置跳转方式
 
 ```objc
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -169,10 +156,10 @@ DefaultData | 参数默认必要参数
 ```
 
 ### Swift
-##在 1.xxxx-Bridging-Header.h中导入头文件
-####　`#import <LinkedME_iOS/LinkedME.h>`
+`1` xxxx-Bridging-Header.h中导入头文件
+`#import <LinkedME_iOS/LinkedME.h>`
 
-##2.在Appdelegate里注册ViewController
+`2` 在Appdelegate里注册ViewController
 ####　2.1配置注册vc设置及跳转方式
 ```swift
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -207,9 +194,9 @@ DefaultData | 参数默认必要参数
 ```
 
 
-
 #####实现自定义跳转必须注册ViewController遵循LMDeepLinkingController协议<br> 并实现 - (void)configureControlWithData:(NSDictionary *)data方法</br>
-### 4.2.2 添加URLScheme和Uniiversal LinKing支持
+
+# 7.添加URLScheme和Uniiversal LinKing支持
 ####　在Appdelegate中实现下列方法
 ###OC
 
@@ -283,7 +270,15 @@ DefaultData | 参数默认必要参数
     }
 ```
 	
-#（创建深度连接）
+# 创建深度连接
+>创建深度链接提供两种方式
+
+`1` 使用iOS/[Android SDK](https://github.com/WFC-LinkedME/LinkedME-Android-Deep-Linking-Demo)创建
+`2` 使用[WEB SDK](https://www.linkedme.cc/docs/page4.html#link2)创建
+
+**注：附录中详解采用哪种方式创建深度链接**
+
+
 ```objc
 //创建短链
 -(void)addPara{
@@ -333,14 +328,11 @@ DefaultData | 参数默认必要参数
 ##Swift
 通过LinkedME.getTestID()获取设备ID,去后台中添加设备
 
-
-# 5.实现自定义跳转方法（传参）
-![reg view0](http://7xq8b0.com1.z0.glb.clouddn.com/deeplinking.png)
-![reg view](http://7xq8b0.com1.z0.glb.clouddn.com/mothed.png )
-
 # 6.Spotlight
+
 ##6.1创建Spotlight索引
-###OC
+>OC
+
 ```objc
 [[LinkedME getInstance] createDiscoverableContentWithTitle:@"LinkedME 国内第一家企业级深度链接"
                                                    description:@"让APP不再是信息孤岛!"
@@ -355,7 +347,8 @@ DefaultData | 参数默认必要参数
     }];
 ```
 
-### Swift
+>Swift
+
 ```swift
 	LinkedME.getInstance().createDiscoverableContentWithTitle("LinkedME 国内第一家企业级深度链接",
                                                                   description: "让APP不再是信息孤岛!",
@@ -370,28 +363,31 @@ DefaultData | 参数默认必要参数
         }
 ```
 
->设置关键字
+`设置关键字`
  
-### OC
+>OC
+
 ```objc
     NSSet *keyWord = [NSSet setWithObjects:@"linkedme", nil];
 ```
-### Swift
+>Swift
+
 ```swift
 	let keyWord = NSSet.init(array: ["linkedme","hellolkm"])
 ```
 
 
->需要传递的参数
+`需要传递的参数`
 
 
 
-###OC
+>OC
 
 ```objc
 	NSSet *set5 = [NSSet 	setWithObjects:@"linkedme",@"linked",@"深度链接", nil];
 ```
-###Swift
+>Swift
+
 ```swift
 	let dic = ["url":"http://linkedme.cc"]
 ```
@@ -445,6 +441,53 @@ LinkedME.removeSearchItemWith(["linkedme"])
 ```
 
 
+#附录：
+## 1.实现SDK提供的跳转方法（传参）
+![reg view0](http://7xq8b0.com1.z0.glb.clouddn.com/deeplinking.png)
+![reg view](http://7xq8b0.com1.z0.glb.clouddn.com/mothed.png )
+
+## 2.什么时候使用WEB SDK 创建深度链接
+
+>使用WEB SDK生成深度链接
+
+如下图这种类型有自己的wap站同时有自己的app并且wap站和app的所有页面都是一一对应的，一般如（新闻资讯类，电商类，直播类等），这种方式的app我们建议使用WEB SDK(js)生产深度链接,客户端仅用于解析深度链接。
+注：（也可以使用iOS/Android SDK生成深度链接）
+
+![ctoutiao](http://7xq8b0.com1.z0.glb.clouddn.com/ctt.jpg)
+
+
+## 3.什么时候使用iOS/Android SDK 创建深度链接
+
+>使用iOS/Android SDK生成深度链接
+
+如下图这种类型，一般是分享活动或者一个游戏房间号，一般没有wap站点的app采用这种方式生成深度链接，再通过js把深度链接放到打开按钮下。
+
+![invate](http://7xq8b0.com1.z0.glb.clouddn.com/invate.jpg)
+
+
+
+
+## 常见问题
+
+![YOU+](http://7xq8b0.com1.z0.glb.clouddn.com/you+.jpg)
+
+`Q:`为什么点击按钮可以直接从微信唤起app？
+`A:`使用Universal Link技术，可以通过链接直接唤起app。
+
+`Q:`为什么右上角会出现lkme.cc？
+`A:`因为使用了苹果的Universal Link技术打开App。
+
+`Q:`可以取消显示么？
+`A:`不可以，因为这是系统级的，无法控制。
+
+`Q:`点击了右上角的lkme.cc为什么出现了下拉点击打开的提示？
+`A:`当用户点击lkme.cc会在safari中打开链接，如果不点击`打开`按钮，Universal Link会失效，只有再次点击`打开`按钮，Universal Link才会恢复。
+
+`Q:`如果用户没有安装app会怎么样？
+`A:`点击`前往App store下载`下载完成后，打开app会跳转到当前分享页面。
+
+`Q:`如果没有点击`前往App store下载`自己去App store搜索下载，下载完成后可以跳转到分享页吗？
+`A:`不可以，只有点击`前往App store下载`按钮才会记录浏览器指纹信息，用于匹配跳转指定页，如果没有点击按钮就不会记录信息。
 
 ## License
 
