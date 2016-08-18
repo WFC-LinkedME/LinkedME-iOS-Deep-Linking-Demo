@@ -487,8 +487,8 @@ LinkedME.removeSearchItemWith(["linkedme"])
 
 |  | 常见问题 | 
 | --- | --- | 
-|`Q`|为什么点击按钮可以直接从微信唤起app？|
-| A | 使用Universal Link技术，可以通过链接直接唤起app。|  
+|`Q:`|为什么点击按钮可以直接从微信唤起app？|
+|`A:`| 使用Universal Link技术，可以通过链接直接唤起app。|  
 ||
 |`Q:`|为什么右上角会出现lkme.cc？|
 |`A:`|因为使用了苹果的Universal Link技术打开App。|
