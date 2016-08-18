@@ -485,28 +485,24 @@ LinkedME.removeSearchItemWith(["linkedme"])
 
 ![YOU+](http://7xq8b0.com1.z0.glb.clouddn.com/you1+.jpg)
 
->`Q:`为什么点击按钮可以直接从微信唤起app？
->`A:`使用Universal Link技术，可以通过链接直接唤起app。
-
-
->`Q:`为什么右上角会出现lkme.cc？
->`A:`因为使用了苹果的Universal Link技术打开App。
-
->`Q:`可以取消显示么？
->`A:`不可以，因为这是系统级的，无法控制。
-
->`Q:`点击了右上角的lkme.cc为什么出现了下拉点击打开的提示？
->`A:`当用户点击lkme.cc会在safari中打开链接，如果不点击`打开`按钮，Universal Link会失效，只有再次点击`打开`按钮，Universal Link才会恢复。
-
-
-
->`Q:`如果用户没有安装app会怎么样？
->`A:`点击`前往App store下载`下载完成后，打开app会跳转到当前分享页面。
-
-
-
->`Q:`如果没有点击`前往App store下载`自己去App store搜索下载，下载完成后可以跳转到分享页吗？
->`A:`不可以，只有点击`前往App store下载`按钮才会记录浏览器指纹信息，用于匹配跳转指定页，如果没有点击按钮就不会记录信息。
+| Q | 为什么点击按钮可以直接从微信唤起app？ | 
+| --- | --- | 
+| A | 使用Universal Link技术，可以通过链接直接唤起app。|  
+||
+|`Q:`|为什么右上角会出现lkme.cc？|
+|`A:`|因为使用了苹果的Universal Link技术打开App。|
+||
+|`Q:`|可以取消显示么？|
+|`A:`|不可以，因为这是系统级的，无法控制。|
+||
+|`Q:`|点击了右上角的lkme.cc为什么出现了下拉点击打开的提示？|
+|`A:`|当用户点击lkme.cc会在safari中打开链接，如果不点击`打开`按钮Universal Link会失效，只有再次点击`打开`按钮，Universal Link才会恢复。|
+||
+|`Q:`|如果用户没有安装app会怎么样？|
+|`A:`|点击`前往App store下载`下载完成后，打开app会跳转到当前分享页面。|
+||
+|`Q:`|如果没有点击`前往App store下载`自己去App store搜索下载，下载完成后可以跳转到分享页吗？|
+|`A:`|不可以，只有点击`前往App store下载`按钮才会记录浏览器指纹信息，用于匹配跳转指定页，如果没有点击按钮就不会记录信息。|
 
 
 ## License
