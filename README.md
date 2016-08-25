@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![License](https://img.shields.io/cocoapods/l/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
+
+[进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
+
 # 1.注册并添加应用
 ##1.1注册账号
 LinkedME账号通用于我们提供的所有产品，登录官方网站进行[注册](http://linkedme.cc/),并登陆系统。
