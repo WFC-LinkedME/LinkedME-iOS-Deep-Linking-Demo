@@ -38,12 +38,12 @@
             //防止传递参数出错取不到数据,导致App崩溃这里一定要用try catch
             @try {
             NSLog(@"LinkedME finished init with params = %@",[params description]);
-            //获取标题
-            NSString *title = [params objectForKey:@"$og_title"];
+            //获取详情页类型(如新闻客户端,有图片类型,视频类型,文字类型等)
+//            NSString *title = [params objectForKey:@"$og_title"];
             NSString *tag = params[@"$control"][@"View"];
                 
-                if (title.length >0 && tag.length >0) {
-                    
+//                if (title.length >0 && tag.length >0) {
+                if (tag.length >0) {
                     //[自动跳转]使用自动跳转
                     //SDK提供的跳转方法
                     /**
