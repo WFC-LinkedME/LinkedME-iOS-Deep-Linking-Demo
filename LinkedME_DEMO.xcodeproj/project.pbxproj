@@ -44,8 +44,8 @@
 		8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102891D06B97B002E6881 /* libz.tbd */; };
 		8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028B1D06B990002E6881 /* libstdc++.tbd */; };
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
-		870102921D06D091002E6881 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102911D06D091002E6881 /* LinkedME_iOS.framework */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
+		C49B34B61D800800004C08FC /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49B34B51D800800004C08FC /* LinkedME_iOS.framework */; };
 		C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -143,10 +143,10 @@
 		870102891D06B97B002E6881 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		8701028B1D06B990002E6881 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		8701028D1D06B999002E6881 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		870102911D06D091002E6881 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		C49B34B51D800800004C08FC /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +159,7 @@
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
+				C49B34B61D800800004C08FC /* LinkedME_iOS.framework in Frameworks */,
 				870102861D06B91B002E6881 /* CoreGraphics.framework in Frameworks */,
 				870102841D06B910002E6881 /* Security.framework in Frameworks */,
 				870102821D06B904002E6881 /* SystemConfiguration.framework in Frameworks */,
@@ -166,7 +167,6 @@
 				8701027C1D06B8DC002E6881 /* TencentOpenAPI.framework in Frameworks */,
 				8701027F1D06B8DC002E6881 /* libWeChatSDK.a in Frameworks */,
 				8701026E1D06B8DC002E6881 /* libUMSocial_Sdk_5.2.1.a in Frameworks */,
-				870102921D06D091002E6881 /* LinkedME_iOS.framework in Frameworks */,
 				870102781D06B8DC002E6881 /* libSocialSinaSSO.a in Frameworks */,
 				870102791D06B8DC002E6881 /* libWeiboSDK.a in Frameworks */,
 				8701027E1D06B8DC002E6881 /* libSocialWechat.a in Frameworks */,
@@ -381,7 +381,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				870102911D06D091002E6881 /* LinkedME_iOS.framework */,
+				C49B34B51D800800004C08FC /* LinkedME_iOS.framework */,
 				870102331D06B8DC002E6881 /* umeng */,
 			);
 			name = Lib;
