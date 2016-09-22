@@ -6,15 +6,29 @@
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 
 [进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
+#接入方法
+##使用 CocoaPods
 
-#Installation with CocoaPods
-
-
->在Podfile文件中添加
+1.在Podfile文件中添加
 
 ```
 pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
 ```
+2.运行 pod instal
+
+3.从现在开始使用 .xcworkspace 打开项目，而不是 .xcodeproj
+
+##手动导入
+1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。
+
+2.依赖Frameworks:
+```
+CoreSpotlight.framework (status:Optional)
+SystemConfiguration.framework
+Security.framework
+```
+**注意事项:CoreSpotlight.framework必须标记为可选**	
+![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
 
 
 # 1.注册并添加应用
