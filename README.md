@@ -7,6 +7,16 @@
 
 [进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
 
+#Installation with CocoaPods
+
+
+>在Podfile文件中添加
+
+```
+pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
+```
+
+
 # 1.注册并添加应用
 ##1.1注册账号
 LinkedME账号通用于我们提供的所有产品，登录官方网站进行[注册](http://linkedme.cc/),并登陆系统。
