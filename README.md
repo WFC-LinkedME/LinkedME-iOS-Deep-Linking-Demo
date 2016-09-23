@@ -14,7 +14,7 @@
 
 >取IDFA版(取IDFA为了广告效果检测,和统计相关,强烈建议集成带IDFA版本)
 
-[集成IDFA版但是app中没有广告审核问题]()
+[集成IDFA版但是app中没有广告审核问题](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/blob/master/IDFA_Audit.md)
 
 ```
 pod 'LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
@@ -33,12 +33,14 @@ pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/
 1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。
 
 2.依赖Frameworks:
-```
-CoreSpotlight.framework (status:Optional)
-SystemConfiguration.framework
-Security.framework
-```
-**注意事项:CoreSpotlight.framework必须标记为可选**	
+
+`CoreSpotlight.framework (status:Optional)`
+`SystemConfiguration.framework`
+`Security.framework`
+`AdSupport.framework`
+
+**注意事项:CoreSpotlight.framework必须标记为可选**
+	**[导入AdSupport.frame但是app中没有广告审核问题](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/blob/master/IDFA_Audit.md)**
 ![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
 
 
