@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-s.name                  = "LinkedME-iOS-Deep-Linking-Demo_Pod"
+s.name                  = "LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA¡±
 s.version               = ¡°1.2.0.8¡±
 s.summary               = "LinkedME Deeplink"
 s.description           = <<-DESC
@@ -18,6 +18,6 @@ s.platform              = :ios
 s.ios.deployment_target = '6.0'
 s.requires_arc          = true
 
-s.frameworks = 'SystemConfiguration','Security','CoreSpotlight','CoreLocation'
+s.frameworks = 'SystemConfiguration','Security','CoreSpotlight','CoreLocation','AdSupport'
 
 end
