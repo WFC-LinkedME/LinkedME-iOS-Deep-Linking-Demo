@@ -6,10 +6,21 @@
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 
 [进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
+
 #接入方法
 ##使用 CocoaPods
 
 1.在Podfile文件中添加
+
+>取IDFA版(取IDFA为了广告效果检测,和统计相关,强烈建议集成带IDFA版本)
+
+[集成IDFA版但是app中没有广告审核问题]()
+
+```
+pod 'LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
+```
+
+>不取IDFA版
 
 ```
 pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
