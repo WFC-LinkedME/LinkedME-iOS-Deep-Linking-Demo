@@ -4,8 +4,7 @@
 
 如果您的应用使用LinkedME标准SDK而未集成任何广告服务，但需要跟踪广告带来的激活行为，请按照下图填写Appstore中的IDFA选项：
 
-![idfa](http://bbs.umeng.com/data/attachment/forum/201508/18/183756szijyj9nlfrf1run.png)
- 
+![idfa](http://7xq8b0.com1.z0.glb.clouddn.com/idfa.png)
 
 -------
 
