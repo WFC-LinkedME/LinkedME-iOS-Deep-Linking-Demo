@@ -38,6 +38,7 @@ pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/
 `SystemConfiguration.framework`
 `Security.framework`
 `AdSupport.framework`
+`CoreTelephony.framework`
 
 **注意事项:CoreSpotlight.framework必须标记为可选**
 	**[导入AdSupport.frame但是app中没有广告审核问题](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/blob/master/IDFA_Audit.md)**
