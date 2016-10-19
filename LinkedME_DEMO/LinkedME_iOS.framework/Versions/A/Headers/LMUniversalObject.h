@@ -3,7 +3,7 @@
 //  iOS-Deep-Linking-SDK
 //
 //  Created by han on 10/16/15.
-//  Copyright © 2015 LM han. All rights reserved.
+//  Copyright © 2015 Bindx. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, ContentIndexMode) {
 @property (nonatomic, strong) NSString *contentDescription;
 //图片地址
 @property (nonatomic, strong) NSString *imageUrl;
-// Note: properties found in metadata will overwrite properties on the BranchUniversalObject itself
+
 @property (nonatomic, strong) NSDictionary *metadata;
 //类型
 @property (nonatomic, strong) NSString *type;
@@ -65,7 +65,6 @@ typedef NS_ENUM(NSInteger, ContentIndexMode) {
 - (void)listOnSpotlightWithCallback:(callbackWithUrl)callback;
 - (void)listOnSpotlightWithIdentifierCallback:(callbackWithUrlAndSpotlightIdentifier)spotlightCallback;
 
-// Convenience method for initSession methods that return BranchUniversalObject, but can be used safely by anyone.
 //返回LMUniversalObject(安全方法)
 + (LMUniversalObject *)getBranchUniversalObjectFromDictionary:(NSDictionary *)dictionary;
 
