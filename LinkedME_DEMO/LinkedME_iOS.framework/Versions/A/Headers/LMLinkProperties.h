@@ -25,7 +25,7 @@
 
 
 - (void)addControlParam:(NSString *)controlParam withValue:(NSString *)value;
-+ (LMLinkProperties *)getBranchLinkPropertiesFromDictionary:(NSDictionary *)dictionary;
++ (LMLinkProperties *)getLinkedMELinkPropertiesFromDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)description;
 

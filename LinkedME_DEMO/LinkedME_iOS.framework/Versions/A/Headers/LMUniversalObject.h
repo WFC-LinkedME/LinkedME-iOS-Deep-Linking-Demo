@@ -66,7 +66,7 @@ typedef NS_ENUM(NSInteger, ContentIndexMode) {
 - (void)listOnSpotlightWithIdentifierCallback:(callbackWithUrlAndSpotlightIdentifier)spotlightCallback;
 
 //返回LMUniversalObject(安全方法)
-+ (LMUniversalObject *)getBranchUniversalObjectFromDictionary:(NSDictionary *)dictionary;
++ (LMUniversalObject *)getLinkedMEUniversalObjectFromDictionary:(NSDictionary *)dictionary;
 
 - (NSString *)description;
 

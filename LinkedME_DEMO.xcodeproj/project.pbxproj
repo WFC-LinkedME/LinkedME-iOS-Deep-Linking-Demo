@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A96D861DEE95D10073791E /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A96D851DEE95D10073791E /* LinkedME_iOS.framework */; };
 		870101FA1D06AA22002E6881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101F91D06AA22002E6881 /* main.m */; };
 		870101FD1D06AA22002E6881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FC1D06AA22002E6881 /* AppDelegate.m */; };
 		870102001D06AA22002E6881 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FF1D06AA22002E6881 /* ViewController.m */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84A96D851DEE95D10073791E /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 		870101F51D06AA22002E6881 /* LinkedME_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedME_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870101F91D06AA22002E6881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		870101FB1D06AA22002E6881 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 				C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
+				84A96D861DEE95D10073791E /* LinkedME_iOS.framework in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
 				C4AEA5BC1DAA1DDE002FF90B /* LinkedME_iOS.framework in Frameworks */,
@@ -381,6 +384,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				84A96D851DEE95D10073791E /* LinkedME_iOS.framework */,
 				C4AEA5BB1DAA1DDE002FF90B /* LinkedME_iOS.framework */,
 				870102331D06B8DC002E6881 /* umeng */,
 			);

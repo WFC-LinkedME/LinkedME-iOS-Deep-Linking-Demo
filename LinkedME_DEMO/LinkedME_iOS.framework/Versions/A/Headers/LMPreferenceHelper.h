@@ -27,6 +27,7 @@
 @property (strong, nonatomic) NSString *spotlightIdentifier;
 @property (strong, nonatomic) NSString *universalLinkUrl;
 @property (strong, nonatomic) NSString *userUrl;
+@property (strong, nonatomic) NSString *userKey;
 @property (strong, nonatomic) NSString *userIdentity;
 @property (strong, nonatomic) NSString *sessionParams;
 @property (strong, nonatomic) NSString *installParams;
@@ -44,7 +45,9 @@
 
 - (NSString *)getAPIBaseURL;
 - (NSString *)getAPIURL:(NSString *)endpoint;
-- (NSString *)getBranchKey:(BOOL)isLive;
+- (NSString *)getLinkedMEKey:(BOOL)isLive;
+-(NSString *)getGameTrackURL:(NSString *)endpoint;
+- (NSString *)getTrackURL:(NSString *)endpoint;
 - (NSString *)getSDKURL:(NSString *)endpoint;
 - (NSString *)getUberURL:(NSString *)endpoint;
 
@@ -53,7 +56,7 @@
 - (void)clearUserCreditsAndCounts;
 - (void)clearUserCredits;
 
-- (id)getBranchUniversalLinkDomains;
+- (id)getLinkedMEUniversalLinkDomains;
 
 - (void)setCreditCount:(NSInteger)count;
 - (void)setCreditCount:(NSInteger)count forBucket:(NSString *)bucket;

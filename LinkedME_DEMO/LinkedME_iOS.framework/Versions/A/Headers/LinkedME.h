@@ -4,7 +4,8 @@
 //
 //  Created by han on 6/5/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
-//
+//  version 1.3.4
+
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LMServerInterface.h"
@@ -309,12 +310,12 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /**
  Get the LKMEUniversalObject from the first time this user was referred (can be empty).
  */
-- (LMUniversalObject *)getFirstReferringBranchUniversalObject;
+- (LMUniversalObject *)getFirstReferringLinkedMEUniversalObject;
 
 /**
  Get the LKMELinkProperties from the first time this user was referred (can be empty).
  */
-- (LMLinkProperties *)getFirstReferringBranchLinkProperties;
+- (LMLinkProperties *)getFirstReferringLinkedMELinkProperties;
 
 /**
  获取用户第一次使用信息 (可空).
@@ -324,12 +325,12 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /**
  最近一次获取LKMEUniversalObject信息(可空)
  */
-- (LMUniversalObject *)getLatestReferringBranchUniversalObject;
+- (LMUniversalObject *)getLatestReferringLinkedMEUniversalObject;
 
 /**
  从最近一次获取LKMELinkProperties属性(可空）
  */
-- (LMLinkProperties *)getLatestReferringBranchLinkProperties;
+- (LMLinkProperties *)getLatestReferringLinkedMELinkProperties;
 
 /**
     获取参数最近使用时间

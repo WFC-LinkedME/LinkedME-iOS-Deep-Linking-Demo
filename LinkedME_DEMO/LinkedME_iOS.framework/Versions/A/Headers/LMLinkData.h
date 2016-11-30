@@ -8,8 +8,8 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSUInteger, LMLinkType) {
-    BranchLinkTypeUnlimitedUse = 0, //永久有效
-    BranchLinkTypeOneTimeUse = 1    //一次有效
+    LinkedMELinkTypeUnlimitedUse = 0, //永久有效
+    LinkedMELinkTypeOneTimeUse = 1    //一次有效
 };
 
 @interface LMLinkData : NSObject
