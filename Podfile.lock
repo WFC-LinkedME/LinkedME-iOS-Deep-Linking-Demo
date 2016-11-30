@@ -1,0 +1,21 @@
+PODS:
+  - LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA (1.2.1.3)
+
+DEPENDENCIES:
+  - LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA (from `https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git`)
+
+EXTERNAL SOURCES:
+  LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA:
+    :git: https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git
+
+CHECKOUT OPTIONS:
+  LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA:
+    :commit: 291dd8e7e78d6aa7ab8fe99c78ade764136a9ae7
+    :git: https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git
+
+SPEC CHECKSUMS:
+  LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA: 2b74b946a71c81e22fe91111e1c038f75a79c7cd
+
+PODFILE CHECKSUM: 405c462049cd3dfeb587e33cc14c5797af792894
+
+COCOAPODS: 1.0.1
