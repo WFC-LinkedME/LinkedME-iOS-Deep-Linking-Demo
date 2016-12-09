@@ -31,6 +31,7 @@
 @property (strong, nonatomic) NSString *userIdentity;
 @property (strong, nonatomic) NSString *sessionParams;
 @property (strong, nonatomic) NSString *installParams;
+@property (strong, nonatomic) NSString *callBackUrl;
 @property (assign, nonatomic) BOOL explicitlyRequestedReferrable;
 @property (assign, nonatomic) BOOL isReferrable;
 @property (assign, nonatomic) BOOL isDebug;
