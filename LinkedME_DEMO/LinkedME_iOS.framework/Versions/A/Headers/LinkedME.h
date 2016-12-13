@@ -4,7 +4,7 @@
 //
 //  Created by han on 6/5/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
-//  version 1.3.4
+//  version 1.3.5
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
