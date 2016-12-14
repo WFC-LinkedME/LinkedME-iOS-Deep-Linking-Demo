@@ -30,7 +30,7 @@ pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/
 3.从现在开始使用 .xcworkspace 打开项目，而不是 .xcodeproj
 
 ##手动导入
-1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。
+1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。（[SDK下载地址](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/raw/master/LinkedME_Lib.zip)）
 
 2.依赖Frameworks:
 
