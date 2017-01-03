@@ -25,7 +25,7 @@ pod 'LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA',:git=>"https://github.com/WFC-Linke
 ```
 pod 'LinkedME-iOS-Deep-Linking-Demo_Pod',:git=>"https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo.git"
 ```
-2.运行 pod instal
+2.运行 pod install
 
 3.从现在开始使用 .xcworkspace 打开项目，而不是 .xcodeproj
 
