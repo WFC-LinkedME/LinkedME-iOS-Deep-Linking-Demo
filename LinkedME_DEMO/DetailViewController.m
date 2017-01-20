@@ -74,7 +74,7 @@ static NSString * LINKEDME_SHORT_URL;
 //友盟分享
 - (void)umShare{
     [UMSocialWechatHandler setWXAppId:@"wxf3393dbc9b09f701" appSecret:@"b1fdeeb043a7684863fac222841f8fda" url:LINKEDME_SHORT_URL];
-    
+
     NSString *summary = [[NSString alloc] initWithFormat:@"%@",arr[page][@"info"]];
     if (LINKEDME_SHORT_URL.length != 0) {
         //初始化社会化分享

@@ -24,7 +24,8 @@
     //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
     
-    [linkedme setDebug];
+    //打印日志
+//    [linkedme setDebug];
     
     //    //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];

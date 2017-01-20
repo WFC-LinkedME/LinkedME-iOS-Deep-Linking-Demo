@@ -19,6 +19,7 @@ typedef void (^callbackWithParams) (NSDictionary *params, NSError *error);
 typedef void (^callbackWithUrl) (NSString *url, NSError *error);
 typedef void (^callbackWithStatus) (BOOL changed, NSError *error);
 typedef void (^callbackWithList) (NSArray *list, NSError *error);
+typedef void (^callbackWithAdInfo) (BOOL status, NSDictionary *dict,NSError *error);
 typedef void (^callbackWithUrlAndSpotlightIdentifier) (NSString *url, NSString *spotlightIdentifier, NSError *error);
 typedef void (^callbackWithLinkedMEUniversalObject) (LMUniversalObject *universalObject, LMLinkProperties *linkProperties, NSError *error);
 ///----------------
@@ -506,5 +507,6 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 + (void)pushViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
 +(UIViewController *)getViewController;
+
 
 @end

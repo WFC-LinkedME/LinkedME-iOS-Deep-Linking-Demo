@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28D1E2B74B700AD1D17 /* StoreKit.framework */; };
+		848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28F1E2B74DA00AD1D17 /* WebKit.framework */; };
+		848EF2921E2CB1A400AD1D17 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */; };
+		848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2931E2CB35400AD1D17 /* AdSupport.framework */; };
 		870101FA1D06AA22002E6881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101F91D06AA22002E6881 /* main.m */; };
 		870101FD1D06AA22002E6881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FC1D06AA22002E6881 /* AppDelegate.m */; };
 		870102001D06AA22002E6881 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FF1D06AA22002E6881 /* ViewController.m */; };
@@ -45,7 +49,6 @@
 		8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028B1D06B990002E6881 /* libstdc++.tbd */; };
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
-		C4AEA5BC1DAA1DDE002FF90B /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AEA5BB1DAA1DDE002FF90B /* LinkedME_iOS.framework */; };
 		C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		848EF28D1E2B74B700AD1D17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		848EF28F1E2B74DA00AD1D17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
+		848EF2931E2CB35400AD1D17 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		870101F51D06AA22002E6881 /* LinkedME_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedME_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870101F91D06AA22002E6881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		870101FB1D06AA22002E6881 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -146,7 +153,6 @@
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
-		C4AEA5BB1DAA1DDE002FF90B /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,12 +160,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */,
+				848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */,
+				848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */,
 				C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
+				848EF2921E2CB1A400AD1D17 /* LinkedME_iOS.framework in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
-				C4AEA5BC1DAA1DDE002FF90B /* LinkedME_iOS.framework in Frameworks */,
 				870102861D06B91B002E6881 /* CoreGraphics.framework in Frameworks */,
 				870102841D06B910002E6881 /* Security.framework in Frameworks */,
 				870102821D06B904002E6881 /* SystemConfiguration.framework in Frameworks */,
@@ -190,6 +199,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		848EF28C1E2B74B700AD1D17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				848EF2931E2CB35400AD1D17 /* AdSupport.framework */,
+				848EF28F1E2B74DA00AD1D17 /* WebKit.framework */,
+				848EF28D1E2B74B700AD1D17 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		870101EC1D06AA22002E6881 = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +216,7 @@
 				870102111D06AA22002E6881 /* LinkedME_DEMOTests */,
 				8701021C1D06AA22002E6881 /* LinkedME_DEMOUITests */,
 				870101F61D06AA22002E6881 /* Products */,
+				848EF28C1E2B74B700AD1D17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -381,7 +401,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C4AEA5BB1DAA1DDE002FF90B /* LinkedME_iOS.framework */,
+				848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */,
 				870102331D06B8DC002E6881 /* umeng */,
 			);
 			name = Lib;

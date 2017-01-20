@@ -10,6 +10,7 @@
 #import "DetailViewController.h"
 #import "DemoViewController.h"
 #import <LinkedME_iOS/LinkedME.h>
+#import <LinkedME_iOS/LinkAdView.h>
 
 
 @interface ViewController ()
@@ -21,6 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    LinkAdView *ad = [LinkAdView getAdWithFrame:CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 100, 450, 100) withAdid:8005 tags:@"" statusCallBack:^(BOOL status, NSDictionary *content) {
+        //加载广告并回调广告状态（是否显示广告）
+        if (!status) {
+            //广告加载失败，这里处理显示其他广告的代码
+        }
+    }];
+    ad.backgroundColor = [UIColor redColor];
+    [self.view addSubview:ad];
+    
+    
+    
+    /*----------------------Spotlight------------------------*/
     
     //关键字
     NSSet *set5 = [NSSet setWithObjects:@"linkedme",@"linked",@"深度链接", nil];
