@@ -18,6 +18,6 @@ s.platform              = :ios
 s.ios.deployment_target = '6.0'
 s.requires_arc          = true
 
-s.frameworks = 'SystemConfiguration','Security','CoreSpotlight','CoreLocation','CoreTelephony'
+s.frameworks = 'SystemConfiguration','Security','CoreSpotlight','CoreLocation','CoreTelephony','WebKit','StoreKit'
 
 end
