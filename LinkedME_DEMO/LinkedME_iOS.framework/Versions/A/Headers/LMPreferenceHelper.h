@@ -35,12 +35,17 @@
 @property (assign, nonatomic) BOOL explicitlyRequestedReferrable;
 @property (assign, nonatomic) BOOL isReferrable;
 @property (assign, nonatomic) BOOL isDebug;
+@property (assign, nonatomic) BOOL useHTTPS;
+@property (assign, nonatomic) BOOL shouldWaitForInit;
 @property (assign, nonatomic) BOOL isContinuingUserActivity;
 @property (assign, nonatomic) NSInteger retryCount;
 @property (assign, nonatomic) NSTimeInterval retryInterval;
 @property (assign, nonatomic) NSTimeInterval timeout;
 @property (strong, nonatomic) NSString *externalIntentURI;
 @property (strong, nonatomic) NSString *sdk_version;
+@property (strong, nonatomic) NSString *closeSession;
+@property (assign, nonatomic) BOOL getSafariCookice;
+@property (assign, nonatomic) BOOL closeEnable;
 
 + (LMPreferenceHelper *)preferenceHelper;
 

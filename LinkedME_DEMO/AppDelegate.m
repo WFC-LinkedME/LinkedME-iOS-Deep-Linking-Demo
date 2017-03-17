@@ -25,7 +25,7 @@
     LinkedME* linkedme = [LinkedME getInstance];
     
     //打印日志
-//    [linkedme setDebug];
+    [linkedme setDebug];
     
     //    //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
@@ -78,6 +78,8 @@
             NSLog(@"LinkedME failed init: %@", error);
         }
     }];
+    
+
     return YES;
 }
 
@@ -132,6 +134,9 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
+
+
+
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.

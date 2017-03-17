@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */; };
 		848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28D1E2B74B700AD1D17 /* StoreKit.framework */; };
 		848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28F1E2B74DA00AD1D17 /* WebKit.framework */; };
 		848EF2921E2CB1A400AD1D17 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */; };
@@ -70,6 +71,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		848EF28D1E2B74B700AD1D17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848EF28F1E2B74DA00AD1D17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */,
 				848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */,
 				848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */,
 				848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */,
@@ -202,6 +205,7 @@
 		848EF28C1E2B74B700AD1D17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */,
 				848EF2931E2CB35400AD1D17 /* AdSupport.framework */,
 				848EF28F1E2B74DA00AD1D17 /* WebKit.framework */,
 				848EF28D1E2B74B700AD1D17 /* StoreKit.framework */,

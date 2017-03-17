@@ -113,8 +113,7 @@ static NSString * LINKEDME_SHORT_URL;
     
     //开始请求短链
     [self.linkedUniversalObject getShortUrlWithLinkProperties:linkProperties andCallback:^(NSString *url, NSError *err) {
-        if (url) {
-            NSLog(@"[LinkedME Info] SDK creates the url is:%@", url);
+        if (url) {            NSLog(@"[LinkedME Info] SDK creates the url is:%@", url);
             //拼接连接
             [H5_LIVE_URL stringByAppendingString:arr[page][@"form"]];
             [H5_LIVE_URL stringByAppendingString:@"?linkedme="];

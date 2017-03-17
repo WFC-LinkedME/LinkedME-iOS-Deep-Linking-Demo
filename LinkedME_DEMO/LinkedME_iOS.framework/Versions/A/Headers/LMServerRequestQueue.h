@@ -27,6 +27,9 @@
 
 - (BOOL)containsInstallOrOpen;
 - (BOOL)containsClose;
+
+- (BOOL)removeInstallOrOpen;
+
 - (LMOpenRequest *)moveInstallOrOpenToFront:(NSInteger)networkCount;
 
 + (id)getInstance;
