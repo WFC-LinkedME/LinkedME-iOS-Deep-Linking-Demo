@@ -7,14 +7,8 @@
 //
 
 #import "DemoViewController.h"
-//#import <LinkedME_iOS/LinkedME.h>
 #import <LinkedME_iOS/LinkedME.h>
-
 #import <LinkedME_iOS/LMUniversalObject.h>
-//#import <LinkedME_iOS/LMUniversalObject.h>
-//#import <LinkedME_iOS/LMLinkProperties.h>
-//#import <LinkedME_iOS/LMSystemObserver.h>
-#import <LinkedME_iOS/LMButton.h>
 
 
 static NSString * const H5_TEST_URL = @"http://192.168.10.101:8888/h5/summary?linkedme=";
@@ -38,7 +32,7 @@ static NSString * LINKEDME_SHORT_URL;
     
     //获取测试Key
 //    [LMSystemObserver getTestID]
-//    [_testID setTitle:[LMSystemObserver getTestID] forState:UIControlStateNormal];
+
     [_testID setTitle:[LinkedME getTestID] forState:UIControlStateNormal];
 }
 
