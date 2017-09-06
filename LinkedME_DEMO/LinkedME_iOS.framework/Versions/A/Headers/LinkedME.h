@@ -4,7 +4,7 @@
 //
 //  Created by han on 6/5/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
-//  version 1.3.5
+//  version 1.5.0.4
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
@@ -267,6 +267,8 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 - (void)getSafariCookice:(BOOL)status;
 
 + (NSString *)getTestID;
+
+- (void)disableMatching;
 
 /**
  增加指定其他常数的参数

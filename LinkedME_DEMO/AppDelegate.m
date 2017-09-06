@@ -49,6 +49,7 @@
                 if (tag.length >0) {
                     //[自动跳转]使用自动跳转
                     //SDK提供的跳转方法
+                    
                     /**
                      *  pushViewController : 类名
                      *  storyBoardID : 需要跳转的页面的storyBoardID
@@ -78,8 +79,6 @@
             NSLog(@"LinkedME failed init: %@", error);
         }
     }];
-    
-
     return YES;
 }
 
