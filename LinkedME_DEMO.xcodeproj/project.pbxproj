@@ -24,14 +24,6 @@
 		870102321D06B4A3002E6881 /* DefaultData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 870102311D06B4A3002E6881 /* DefaultData.plist */; };
 		8701026D1D06B8DC002E6881 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 870102351D06B8DC002E6881 /* UMSocialLocalizable.strings */; };
 		8701026E1D06B8DC002E6881 /* libUMSocial_Sdk_5.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102431D06B8DC002E6881 /* libUMSocial_Sdk_5.2.1.a */; };
-		8701026F1D06B8DC002E6881 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870102451D06B8DC002E6881 /* UMSCommentDetailController.xib */; };
-		870102701D06B8DC002E6881 /* UMSCommentInputController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870102461D06B8DC002E6881 /* UMSCommentInputController.xib */; };
-		870102711D06B8DC002E6881 /* UMSCommentInputControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870102471D06B8DC002E6881 /* UMSCommentInputControlleriPad.xib */; };
-		870102721D06B8DC002E6881 /* UMShareEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870102481D06B8DC002E6881 /* UMShareEditViewController.xib */; };
-		870102731D06B8DC002E6881 /* UMShareEditViewControlleriPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870102491D06B8DC002E6881 /* UMShareEditViewControlleriPad.xib */; };
-		870102741D06B8DC002E6881 /* UMSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701024A1D06B8DC002E6881 /* UMSLoginViewController.xib */; };
-		870102751D06B8DC002E6881 /* UMSnsAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701024B1D06B8DC002E6881 /* UMSnsAccountViewController.xib */; };
-		870102761D06B8DC002E6881 /* UMSShareListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701024C1D06B8DC002E6881 /* UMSShareListController.xib */; };
 		870102771D06B8DC002E6881 /* UMSocialSDKResourcesNew.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8701024D1D06B8DC002E6881 /* UMSocialSDKResourcesNew.bundle */; };
 		870102781D06B8DC002E6881 /* libSocialSinaSSO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102511D06B8DC002E6881 /* libSocialSinaSSO.a */; };
 		870102791D06B8DC002E6881 /* libWeiboSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102521D06B8DC002E6881 /* libWeiboSDK.a */; };
@@ -109,14 +101,6 @@
 		870102411D06B8DC002E6881 /* UMSocialSnsPlatformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsPlatformManager.h; sourceTree = "<group>"; };
 		870102421D06B8DC002E6881 /* UMSocialSnsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialSnsService.h; sourceTree = "<group>"; };
 		870102431D06B8DC002E6881 /* libUMSocial_Sdk_5.2.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMSocial_Sdk_5.2.1.a; sourceTree = "<group>"; };
-		870102451D06B8DC002E6881 /* UMSCommentDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentDetailController.xib; sourceTree = "<group>"; };
-		870102461D06B8DC002E6881 /* UMSCommentInputController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputController.xib; sourceTree = "<group>"; };
-		870102471D06B8DC002E6881 /* UMSCommentInputControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSCommentInputControlleriPad.xib; sourceTree = "<group>"; };
-		870102481D06B8DC002E6881 /* UMShareEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewController.xib; sourceTree = "<group>"; };
-		870102491D06B8DC002E6881 /* UMShareEditViewControlleriPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMShareEditViewControlleriPad.xib; sourceTree = "<group>"; };
-		8701024A1D06B8DC002E6881 /* UMSLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSLoginViewController.xib; sourceTree = "<group>"; };
-		8701024B1D06B8DC002E6881 /* UMSnsAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSnsAccountViewController.xib; sourceTree = "<group>"; };
-		8701024C1D06B8DC002E6881 /* UMSShareListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UMSShareListController.xib; sourceTree = "<group>"; };
 		8701024D1D06B8DC002E6881 /* UMSocialSDKResourcesNew.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UMSocialSDKResourcesNew.bundle; sourceTree = "<group>"; };
 		8701024E1D06B8DC002E6881 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/UMSocialLocalizable.strings"; sourceTree = "<group>"; };
 		870102511D06B8DC002E6881 /* libSocialSinaSSO.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSocialSinaSSO.a; sourceTree = "<group>"; };
@@ -333,14 +317,6 @@
 		870102441D06B8DC002E6881 /* SocialSDKXib */ = {
 			isa = PBXGroup;
 			children = (
-				870102451D06B8DC002E6881 /* UMSCommentDetailController.xib */,
-				870102461D06B8DC002E6881 /* UMSCommentInputController.xib */,
-				870102471D06B8DC002E6881 /* UMSCommentInputControlleriPad.xib */,
-				870102481D06B8DC002E6881 /* UMShareEditViewController.xib */,
-				870102491D06B8DC002E6881 /* UMShareEditViewControlleriPad.xib */,
-				8701024A1D06B8DC002E6881 /* UMSLoginViewController.xib */,
-				8701024B1D06B8DC002E6881 /* UMSnsAccountViewController.xib */,
-				8701024C1D06B8DC002E6881 /* UMSShareListController.xib */,
 			);
 			path = SocialSDKXib;
 			sourceTree = "<group>";
@@ -473,7 +449,7 @@
 		870101ED1D06AA22002E6881 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Bindx;
 				TargetAttributes = {
 					870101F41D06AA22002E6881 = {
@@ -523,21 +499,13 @@
 			files = (
 				8701027D1D06B8DC002E6881 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
 				870102801D06B8DC002E6881 /* README.txt in Resources */,
-				870102731D06B8DC002E6881 /* UMShareEditViewControlleriPad.xib in Resources */,
-				870102751D06B8DC002E6881 /* UMSnsAccountViewController.xib in Resources */,
 				8701027A1D06B8DC002E6881 /* WeiboSDK.bundle in Resources */,
-				870102701D06B8DC002E6881 /* UMSCommentInputController.xib in Resources */,
-				8701026F1D06B8DC002E6881 /* UMSCommentDetailController.xib in Resources */,
 				870102081D06AA22002E6881 /* LaunchScreen.storyboard in Resources */,
 				870102051D06AA22002E6881 /* Assets.xcassets in Resources */,
 				870102771D06B8DC002E6881 /* UMSocialSDKResourcesNew.bundle in Resources */,
-				870102711D06B8DC002E6881 /* UMSCommentInputControlleriPad.xib in Resources */,
-				870102721D06B8DC002E6881 /* UMShareEditViewController.xib in Resources */,
-				870102761D06B8DC002E6881 /* UMSShareListController.xib in Resources */,
 				8701026D1D06B8DC002E6881 /* UMSocialLocalizable.strings in Resources */,
 				870102321D06B4A3002E6881 /* DefaultData.plist in Resources */,
 				870102031D06AA22002E6881 /* Main.storyboard in Resources */,
-				870102741D06B8DC002E6881 /* UMSLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,18 +602,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -679,18 +656,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
