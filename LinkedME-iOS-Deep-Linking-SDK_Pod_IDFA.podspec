@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name                  = "LinkedME-iOS-Deep-Linking-SDK_Pod_IDFA"
-  s.version          	= '1.5.1.4'
+  s.version          	= '1.5.1.7'
 s.summary               = "LinkedME Deeplink"
 s.description           = <<-DESC
 LinkedME Deeplink for iOS.
