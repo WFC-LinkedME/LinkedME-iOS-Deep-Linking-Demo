@@ -8,6 +8,7 @@
 [进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
 
 #接入方法
+
 ##使用 CocoaPods
 
 1.编辑Podfile文件并添加以下代码
@@ -18,6 +19,13 @@ pod 'LinkedME_LinkPage'
 2.运行 pod install
 
 3.从现在开始使用 .xcworkspace 打开项目，而不是 .xcodeproj
+
+> 提示：如果提示[!] Unable to find a pod with name, author, summary, or description matching \` LinkedME_LinkPage\`
+
+解决方法就是Finder前往资源库去删除缓存中的search_index.json
+
+执行：rm -rf ~/Library/Caches/CocoaPods/search_index.json
+再重新search/install/update 
 
 ##手动导入
 1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。（[SDK下载地址](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/raw/master/LinkedME_Lib.zip)）
