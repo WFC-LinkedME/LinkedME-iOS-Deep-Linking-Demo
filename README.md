@@ -1,4 +1,4 @@
-#LinkedME iOS 集成文档
+# LinkedME iOS 集成文档
 
 [![CI Status](http://img.shields.io/travis/Bindx/LinkedME_iOS.svg?style=flat)](https://travis-ci.org/Bindx/LinkedME_iOS)
 [![Version](https://img.shields.io/cocoapods/v/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
@@ -7,9 +7,9 @@
 
 [进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
 
-#接入方法
+# 接入方法
 
-##使用 CocoaPods
+## 使用 CocoaPods
 
 1.编辑Podfile文件并添加以下代码
 
@@ -27,7 +27,7 @@ pod 'LinkedME_LinkPage'
 执行：rm -rf ~/Library/Caches/CocoaPods/search_index.json
 再重新search/install/update 
 
-##手动导入
+## 手动导入
 1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。（[SDK下载地址](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/raw/master/LinkedME_Lib.zip)）
 
 2.依赖Frameworks:
@@ -38,6 +38,7 @@ pod 'LinkedME_LinkPage'
 `AdSupport.framework`
 `CoreTelephony.framework`
 
+
 **注意事项:CoreSpotlight.framework必须标记为可选**
 	**[导入AdSupport.frame但是app中没有广告审核问题](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/blob/master/IDFA_Audit.md)**
 ![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
@@ -47,17 +48,17 @@ pod 'LinkedME_LinkPage'
 ##1.1注册账号
 LinkedME账号通用于我们提供的所有产品，登录官方网站进行[注册](http://linkedme.cc/),并登陆系统。
 
-##1.2 开通使用
+## 1.2 开通使用
 注册成功之后，即可登录使用。
 
-##1.3 创建应用
+## 1.3 创建应用
 >成功登录后台之后，可点击`+`按钮创建应用。
 ![创建app](https://www.linkedme.cc/docs/images/2.2.1-1.jpg)
 
 输入APP名字之后，点击“创建APP”完成创建。可以到后台导航栏`设置`->`应用`中查看应用相关信息。
 ![创建app](https://www.linkedme.cc/docs/images/2.2.1-2.jpg)
 
-##1.4 应用设置
+## 1.4 应用设置
 点击`设置`可以对应用进行设置。
 ![设置app](https://www.linkedme.cc/docs/images/2.3.1.jpg)
 
@@ -108,7 +109,7 @@ DefaultData | 参数默认必要参数
 **注意事项:CoreSpotlight.framework必须标记为可选**	
 ![spotlight warning](http://7xq8b0.com1.z0.glb.clouddn.com/spotlight1.png)
 
-#5.注册URL Scheme（推荐/可选）
+# 5.注册URL Scheme（推荐/可选）
 
 `1` 打开info.plist
 
@@ -117,7 +118,7 @@ DefaultData | 参数默认必要参数
 `3` 添加"you app"(你的app的唯一标识字符串)
 ![urltypes set up](http://7xq8b0.com1.z0.glb.clouddn.com/url_scheme.jpg)
 
-#5.1 添加Universal Linking支持 (仅支持iOS 9)*
+# 5.1 添加Universal Linking支持 (仅支持iOS 9)*
 `1` 在左侧导航器中点击您的项目
 
 `2` 选择'Capabilities'标签
@@ -363,23 +364,23 @@ DefaultData | 参数默认必要参数
     }];
 }
 ```
-#Debug模式
+# Debug模式
 >在Debug模式下会打印日志
 
-##OC
+## OC
   [linkedme setDebug];
 
-##Swift
+## Swift
   linkedme.setDebug();
   
   
-#测试模式
+# 测试模式
 >在后台(Dashboard)中-设置-测试-添加测试设备
 
-##OC
+## OC
 通过[LinkedME getTestID]获取设备ID,去后台中添加设备
 
-##Swift
+##S wift
 通过LinkedME.getTestID()获取设备ID,去后台中添加设备
 
 # 6.Spotlight
