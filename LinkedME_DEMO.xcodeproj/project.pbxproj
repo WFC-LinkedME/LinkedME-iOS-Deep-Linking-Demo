@@ -10,7 +10,6 @@
 		844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */; };
 		848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28D1E2B74B700AD1D17 /* StoreKit.framework */; };
 		848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28F1E2B74DA00AD1D17 /* WebKit.framework */; };
-		848EF2921E2CB1A400AD1D17 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */; };
 		848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2931E2CB35400AD1D17 /* AdSupport.framework */; };
 		870101FA1D06AA22002E6881 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101F91D06AA22002E6881 /* main.m */; };
 		870101FD1D06AA22002E6881 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 870101FC1D06AA22002E6881 /* AppDelegate.m */; };
@@ -42,6 +41,7 @@
 		8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028B1D06B990002E6881 /* libstdc++.tbd */; };
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
+		C41FA2F71FF508140019BF83 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */; };
 		C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -66,7 +66,6 @@
 		844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		848EF28D1E2B74B700AD1D17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848EF28F1E2B74DA00AD1D17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 		848EF2931E2CB35400AD1D17 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		870101F51D06AA22002E6881 /* LinkedME_DEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedME_DEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870101F91D06AA22002E6881 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,6 +138,7 @@
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,13 +147,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */,
+				C41FA2F71FF508140019BF83 /* LinkedME_iOS.framework in Frameworks */,
 				848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */,
 				848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */,
 				848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */,
 				C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
-				848EF2921E2CB1A400AD1D17 /* LinkedME_iOS.framework in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
 				870102861D06B91B002E6881 /* CoreGraphics.framework in Frameworks */,
@@ -381,7 +381,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				848EF2911E2CB1A400AD1D17 /* LinkedME_iOS.framework */,
+				C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */,
 				870102331D06B8DC002E6881 /* umeng */,
 			);
 			name = Lib;
@@ -714,6 +714,7 @@
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -742,6 +743,7 @@
 					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

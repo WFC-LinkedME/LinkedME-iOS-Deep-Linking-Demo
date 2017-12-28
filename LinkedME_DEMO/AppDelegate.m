@@ -11,7 +11,6 @@
 #import "DetailViewController.h"
 
 
-
 @interface AppDelegate ()
 
 @end

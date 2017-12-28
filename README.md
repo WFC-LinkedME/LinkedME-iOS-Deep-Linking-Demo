@@ -28,6 +28,7 @@ pod 'LinkedME_LinkPage'
 再重新search/install/update 
 
 ##手动导入
+
 1.获取SDK,下载Demo, LinkedME_DEMO文件夹下的LinkedME_iOS.framework文件是SDK的文件。（[SDK下载地址](https://github.com/WFC-LinkedME/LinkedME-iOS-Deep-Linking-Demo/raw/master/LinkedME_Lib.zip)）
 
 2.依赖Frameworks:
