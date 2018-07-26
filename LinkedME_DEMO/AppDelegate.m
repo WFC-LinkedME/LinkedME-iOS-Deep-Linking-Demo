@@ -22,6 +22,13 @@
     
     //初始化及实例
     LinkedME* linkedme = [LinkedME getInstance];
+  
+#warning 国内销售的iPhone如果装载了iOS 10或以上系统，用户第一次安装的默认无法联网，需要设置一下网络重试，需求设置即可,否则可能会导致用户第一次安装无法获取数据。
+    //设置重试次数
+    [linkedme setMaxRetries:60];
+    //设置重试间隔时间
+    [linkedme setRetryInterval:1];
+
     
     //打印日志
     [linkedme setDebug];
