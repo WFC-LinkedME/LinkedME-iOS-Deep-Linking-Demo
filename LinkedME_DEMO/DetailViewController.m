@@ -10,14 +10,12 @@
 #import <LinkedME_iOS/LinkedME.h>
 #import <LinkedME_iOS/LMUniversalObject.h>
 #import <LinkedME_iOS/LMLinkProperties.h>
-#import "UMSocialWechatHandler.h"
-#import "UMSocial.h"
 
 
 static NSString * const H5_TEST_URL = @"http://192.168.10.101:8888/h5/summary?linkedme=";
 static NSString * LINKEDME_SHORT_URL;
 
-@interface DetailViewController ()<UMSocialUIDelegate>
+@interface DetailViewController ()
 
 @property (strong, nonatomic) LMUniversalObject *linkedUniversalObject;
 
@@ -71,32 +69,34 @@ static NSString * LINKEDME_SHORT_URL;
     self.navigationItem.rightBarButtonItem = rightBraBttonItem;
 }
 
-//友盟分享
+
+//分享
 - (void)umShare{
-    [UMSocialWechatHandler setWXAppId:@"wxf3393dbc9b09f701" appSecret:@"b1fdeeb043a7684863fac222841f8fda" url:LINKEDME_SHORT_URL];
-
-    NSString *summary = [[NSString alloc] initWithFormat:@"%@",arr[page][@"info"]];
-    if (LINKEDME_SHORT_URL.length != 0) {
-        //初始化社会化分享
-        
-        [UMSocialSnsService presentSnsIconSheetView:self
-                                             appKey:@"560fce13e0f55a730c003844"
-                                          shareText:LINKEDME_SHORT_URL
-                                         shareImage:[UIImage imageNamed:@"share_logo.png"]
-                                    shareToSnsNames:[NSArray arrayWithObjects:UMShareToSina,UMShareToTencent,UMShareToRenren,UMShareToSms,UMShareToWechatSession,UMShareToWechatTimeline,UMShareToEmail,UMShareToWechatSession, nil]
-                                           delegate:self];
-        
-    }
+    
+    //分享的标题
+    NSString *textToShare = @"LinkedME深度链接";
+    //分享的图片
+    UIImage *imageToShare = [UIImage imageNamed:@"share_logo.png"];
+    //分享的url
+    NSURL *urlToShare = [NSURL URLWithString:LINKEDME_SHORT_URL];
+    //在这里呢 如果想分享图片 就把图片添加进去  文字什么的通上
+    NSArray *activityItems = @[textToShare,imageToShare, urlToShare];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc]initWithActivityItems:activityItems applicationActivities:nil];
+    //不出现在活动项目
+    activityVC.excludedActivityTypes = @[UIActivityTypePostToWeibo,UIActivityTypePrint, UIActivityTypeCopyToPasteboard,UIActivityTypeAssignToContact,UIActivityTypeSaveToCameraRoll];
+    [self presentViewController:activityVC animated:YES completion:nil];
+    // 分享之后的回调
+    activityVC.completionWithItemsHandler = ^(UIActivityType  _Nullable activityType, BOOL completed, NSArray * _Nullable returnedItems, NSError * _Nullable activityError) {
+        if (completed) {
+            NSLog(@"completed");
+            //分享 成功
+        } else  {
+            NSLog(@"cancled");
+            //分享 取消
+        }
+    };
 }
 
-//友盟分享回调
--(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response{
-    //根据`responseCode`得到发送结果,如果分享成功
-    if(response.responseCode == UMSResponseCodeSuccess){
-        //得到分享到的微博平台名
-        NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
-    }
-}
 
 //创建短链
 -(void)addPara{

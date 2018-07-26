@@ -34,4 +34,6 @@
 
 + (id)getInstance;
 
+@property (readonly, assign, atomic) NSInteger queueDepth;
+
 @end
