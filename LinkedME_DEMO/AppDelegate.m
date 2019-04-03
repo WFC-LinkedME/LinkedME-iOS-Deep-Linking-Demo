@@ -28,17 +28,16 @@
     [linkedme setMaxRetries:60];
     //设置重试间隔时间
     [linkedme setRetryInterval:1];
-
     
     //打印日志
     [linkedme setDebug];
     
-    //    //注册需要跳转的viewController
+    //注册需要跳转的viewController
     UIStoryboard * storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     DetailViewController  *dvc=[storyBoard instantiateViewControllerWithIdentifier:@"detailView"];
     
     //[自动跳转]如果使用自动跳转需要注册viewController
-    //    [linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
+    //[linkedme registerDeepLinkController:featureVC forKey:@"LMFeatureViewController"];
  
 #warning 必须实现
     //获取跳转参数
@@ -106,7 +105,6 @@
     if ([[userActivity.webpageURL description] rangeOfString:@"lkme.cc"].location != NSNotFound) {
         return  [[LinkedME getInstance] continueUserActivity:userActivity];
     }
-    
     return YES;
 }
 
@@ -139,9 +137,6 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
-
-
-
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.

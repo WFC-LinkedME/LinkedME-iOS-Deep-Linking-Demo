@@ -36,6 +36,7 @@
 @property (assign, nonatomic) BOOL isReferrable;
 @property (assign, nonatomic) BOOL isDebug;
 @property (assign, nonatomic) BOOL useHTTPS;
+@property (assign, nonatomic) BOOL disableLocation;
 @property (assign, nonatomic) BOOL shouldWaitForInit;
 @property (assign, nonatomic) BOOL isContinuingUserActivity;
 @property (assign, nonatomic) NSInteger retryCount;

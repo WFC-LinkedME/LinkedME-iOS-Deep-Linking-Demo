@@ -238,7 +238,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /**
  允许从通知中心打开
  在创建推送式通知时,指定关键的NSString LKME链接,@“LinkedME”
- NSDictionary userInfo = @{@"LKME": @"https://bnc.lt/...", ... };
+ NSDictionary userInfo = @{@"linkedme": @"https://lkme.cc/...", ... };
  */
 - (void)handlePushNotification:(NSDictionary *)userInfo;
 
@@ -248,7 +248,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /// @name Deep Link 控制器
 ///---------------------------
 
-//注册深度链接控制器
+//注册深度链接控制器`
 - (void)registerDeepLinkController:(UIViewController <LMDeepLinkingController> *)controller forKey:(NSString *)key;
 
 #pragma mark - Configuration methods
