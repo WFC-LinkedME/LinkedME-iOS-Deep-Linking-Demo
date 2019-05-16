@@ -309,7 +309,7 @@
 			};
 			buildConfigurationList = 870101F01D06AA22002E6881 /* Build configuration list for PBXProject "LinkedME_DEMO" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
