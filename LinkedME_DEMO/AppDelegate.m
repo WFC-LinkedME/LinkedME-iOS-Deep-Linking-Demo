@@ -65,7 +65,7 @@
                      */
 
 //                    [LinkedME pushViewController:title storyBoardID:@"detailView" animated:YES customValue:@{@"tag":tag} completion:^{
-///
+//
 //                    }];
                     
                     //自定义跳转
