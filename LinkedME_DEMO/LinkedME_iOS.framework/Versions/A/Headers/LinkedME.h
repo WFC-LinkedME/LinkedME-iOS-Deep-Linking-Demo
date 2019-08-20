@@ -221,6 +221,8 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  @param url 使用url打开应用.
  */
 - (BOOL)handleDeepLink:(NSURL *)url;
+    
+- (BOOL)handleSchemeLink:(NSURL *)url;
 
 /**
  允许从NSUserActivity处理连接,是否返回。
