@@ -35,7 +35,7 @@
      *  @param thumbnailUrl      缩略图Url
      *  @param keywords          关键字
      *  @param userInfo          用户详情
-     *  @param expirationDate    失效日期,设置失效日期会自动删除索引
+     *  @param expirationDate    失效日期,设置失效日期会自动删除索引 
      *  @param identifier        标志符
      *  @param callback          回调
      *  @param spotlightCallback Spotlight回掉

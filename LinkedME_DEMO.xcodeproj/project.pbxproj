@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */; };
+		847386FB2318F04E00FE36DA /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847386FA2318F04E00FE36DA /* LinkedME_iOS.framework */; };
 		848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28D1E2B74B700AD1D17 /* StoreKit.framework */; };
 		848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF28F1E2B74DA00AD1D17 /* WebKit.framework */; };
 		848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848EF2931E2CB35400AD1D17 /* AdSupport.framework */; };
@@ -17,8 +17,6 @@
 		870102031D06AA22002E6881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870102011D06AA22002E6881 /* Main.storyboard */; };
 		870102051D06AA22002E6881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870102041D06AA22002E6881 /* Assets.xcassets */; };
 		870102081D06AA22002E6881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870102061D06AA22002E6881 /* LaunchScreen.storyboard */; };
-		870102131D06AA22002E6881 /* LinkedME_DEMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102121D06AA22002E6881 /* LinkedME_DEMOTests.m */; };
-		8701021E1D06AA22002E6881 /* LinkedME_DEMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701021D1D06AA22002E6881 /* LinkedME_DEMOUITests.m */; };
 		870102301D06B274002E6881 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701022F1D06B274002E6881 /* DetailViewController.m */; };
 		870102321D06B4A3002E6881 /* DefaultData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 870102311D06B4A3002E6881 /* DefaultData.plist */; };
 		870102821D06B904002E6881 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870102811D06B904002E6881 /* SystemConfiguration.framework */; };
@@ -29,29 +27,12 @@
 		8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028B1D06B990002E6881 /* libstdc++.tbd */; };
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
-		C41FA2F71FF508140019BF83 /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */; };
 		C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		8701020F1D06AA22002E6881 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 870101ED1D06AA22002E6881 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 870101F41D06AA22002E6881;
-			remoteInfo = LinkedME_DEMO;
-		};
-		8701021A1D06AA22002E6881 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 870101ED1D06AA22002E6881 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 870101F41D06AA22002E6881;
-			remoteInfo = LinkedME_DEMO;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		844ECFF21E7B8A74005DCCA7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		847386FA2318F04E00FE36DA /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 		848EF28D1E2B74B700AD1D17 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848EF28F1E2B74DA00AD1D17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		848EF2931E2CB35400AD1D17 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -65,10 +46,8 @@
 		870102041D06AA22002E6881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		870102071D06AA22002E6881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		870102091D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedME_DEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		870102121D06AA22002E6881 /* LinkedME_DEMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedME_DEMOTests.m; sourceTree = "<group>"; };
 		870102141D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkedME_DEMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8701021D1D06AA22002E6881 /* LinkedME_DEMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedME_DEMOUITests.m; sourceTree = "<group>"; };
 		8701021F1D06AA22002E6881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8701022D1D06AB78002E6881 /* LinkedME_DEMO.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinkedME_DEMO.entitlements; sourceTree = "<group>"; };
@@ -85,7 +64,6 @@
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
-		C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,33 +71,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				844ECFF31E7B8A74005DCCA7 /* CoreLocation.framework in Frameworks */,
-				C41FA2F71FF508140019BF83 /* LinkedME_iOS.framework in Frameworks */,
 				848EF2941E2CB35400AD1D17 /* AdSupport.framework in Frameworks */,
 				848EF2901E2B74DA00AD1D17 /* WebKit.framework in Frameworks */,
 				848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */,
 				C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
+				847386FB2318F04E00FE36DA /* LinkedME_iOS.framework in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
 				870102861D06B91B002E6881 /* CoreGraphics.framework in Frameworks */,
 				870102841D06B910002E6881 /* Security.framework in Frameworks */,
 				870102821D06B904002E6881 /* SystemConfiguration.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8701020B1D06AA22002E6881 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		870102161D06AA22002E6881 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +115,6 @@
 			isa = PBXGroup;
 			children = (
 				870101F51D06AA22002E6881 /* LinkedME_DEMO.app */,
-				8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */,
-				870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -218,7 +179,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C41FA2F61FF508140019BF83 /* LinkedME_iOS.framework */,
+				847386FA2318F04E00FE36DA /* LinkedME_iOS.framework */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
@@ -243,42 +204,6 @@
 			productReference = 870101F51D06AA22002E6881 /* LinkedME_DEMO.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8701020D1D06AA22002E6881 /* LinkedME_DEMOTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 870102251D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOTests" */;
-			buildPhases = (
-				8701020A1D06AA22002E6881 /* Sources */,
-				8701020B1D06AA22002E6881 /* Frameworks */,
-				8701020C1D06AA22002E6881 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				870102101D06AA22002E6881 /* PBXTargetDependency */,
-			);
-			name = LinkedME_DEMOTests;
-			productName = LinkedME_DEMOTests;
-			productReference = 8701020E1D06AA22002E6881 /* LinkedME_DEMOTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		870102181D06AA22002E6881 /* LinkedME_DEMOUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 870102281D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOUITests" */;
-			buildPhases = (
-				870102151D06AA22002E6881 /* Sources */,
-				870102161D06AA22002E6881 /* Frameworks */,
-				870102171D06AA22002E6881 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8701021B1D06AA22002E6881 /* PBXTargetDependency */,
-			);
-			name = LinkedME_DEMOUITests;
-			productName = LinkedME_DEMOUITests;
-			productReference = 870102191D06AA22002E6881 /* LinkedME_DEMOUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,14 +222,6 @@
 							};
 						};
 					};
-					8701020D1D06AA22002E6881 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 870101F41D06AA22002E6881;
-					};
-					870102181D06AA22002E6881 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 870101F41D06AA22002E6881;
-					};
 				};
 			};
 			buildConfigurationList = 870101F01D06AA22002E6881 /* Build configuration list for PBXProject "LinkedME_DEMO" */;
@@ -322,8 +239,6 @@
 			projectRoot = "";
 			targets = (
 				870101F41D06AA22002E6881 /* LinkedME_DEMO */,
-				8701020D1D06AA22002E6881 /* LinkedME_DEMOTests */,
-				870102181D06AA22002E6881 /* LinkedME_DEMOUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -337,20 +252,6 @@
 				870102051D06AA22002E6881 /* Assets.xcassets in Resources */,
 				870102321D06B4A3002E6881 /* DefaultData.plist in Resources */,
 				870102031D06AA22002E6881 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8701020C1D06AA22002E6881 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		870102171D06AA22002E6881 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,36 +270,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8701020A1D06AA22002E6881 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				870102131D06AA22002E6881 /* LinkedME_DEMOTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		870102151D06AA22002E6881 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8701021E1D06AA22002E6881 /* LinkedME_DEMOUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		870102101D06AA22002E6881 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 870101F41D06AA22002E6881 /* LinkedME_DEMO */;
-			targetProxy = 8701020F1D06AA22002E6881 /* PBXContainerItemProxy */;
-		};
-		8701021B1D06AA22002E6881 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 870101F41D06AA22002E6881 /* LinkedME_DEMO */;
-			targetProxy = 8701021A1D06AA22002E6881 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		870102011D06AA22002E6881 /* Main.storyboard */ = {
@@ -533,22 +405,16 @@
 				CODE_SIGN_ENTITLEMENTS = LinkedME_DEMO/LinkedME_DEMO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_DEMO",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_5.2.1",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -562,71 +428,20 @@
 				CODE_SIGN_ENTITLEMENTS = LinkedME_DEMO/LinkedME_DEMO.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				ENABLE_BITCODE = NO;
+				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LinkedME_DEMO",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
 				INFOPLIST_FILE = LinkedME_DEMO/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_5.2.1",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/SinaSSO",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
-					"$(PROJECT_DIR)/LinkedME_DEMO/umeng/UMSocial_Sdk_Extra_Frameworks/Wechat",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microquation.LinkedME;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-			};
-			name = Release;
-		};
-		870102261D06AA22002E6881 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LinkedME_DEMOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedME_DEMO.app/LinkedME_DEMO";
-			};
-			name = Debug;
-		};
-		870102271D06AA22002E6881 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = LinkedME_DEMOTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkedME_DEMO.app/LinkedME_DEMO";
-			};
-			name = Release;
-		};
-		870102291D06AA22002E6881 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LinkedME_DEMOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = LinkedME_DEMO;
-			};
-			name = Debug;
-		};
-		8701022A1D06AA22002E6881 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = LinkedME_DEMOUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bindx.LinkedME-DEMOUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = LinkedME_DEMO;
 			};
 			name = Release;
 		};
@@ -647,24 +462,6 @@
 			buildConfigurations = (
 				870102231D06AA22002E6881 /* Debug */,
 				870102241D06AA22002E6881 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		870102251D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				870102261D06AA22002E6881 /* Debug */,
-				870102271D06AA22002E6881 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		870102281D06AA22002E6881 /* Build configuration list for PBXNativeTarget "LinkedME_DEMOUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				870102291D06AA22002E6881 /* Debug */,
-				8701022A1D06AA22002E6881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
