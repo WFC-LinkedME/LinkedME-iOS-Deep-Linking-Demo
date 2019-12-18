@@ -2,7 +2,7 @@
 //  LMLinkProperties.h
 //  iOS-Deep-Linking-SDK
 //
-//  Created by han on 10/16/15.
+//  Created on 10/16/15.
 //  Copyright © 2015 Bindx. All rights reserved.
 //
 

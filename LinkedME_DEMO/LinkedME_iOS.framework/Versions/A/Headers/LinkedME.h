@@ -2,7 +2,7 @@
 //  LM_SDK.h
 //  iOS-Deep-Linking-SDK
 //
-//  Created by han on 6/5/14.
+//  Created on 6/5/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
 //  version 1.5.0.4
 
@@ -123,11 +123,10 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 + (LinkedME *)getInstance;
 
-/**
- 获取LinkedME实例、配置linkedMeKey
- 
- @param 必要参数.
- @warning 不建议使用此方法,建议在Info.plist中配置
+/*
+ 获取LinkedME实例，配置LinkedMEKey
+ @pparam 必要参数
+ @warning 不建议c使用此方法j，建议在Info.plist中配置
  */
 + (LinkedME *)getInstance:(NSString *)linkedMeKey;
 
@@ -137,15 +136,14 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 // @name 初始化
 //---------------------
 
-/**
+/*
  初始化LinkedME会话和应用程序启动选项。
- 
  @param AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现。
  @warning 不推荐使用此方法初始化LinkedME. 可以正常启动但没有回调信息
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options;
 
-/**
+/*
  初始化LinkedME会话和应用程序启动选项
  
  @param 在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现。
@@ -154,7 +152,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options isReferrable:(BOOL)isReferrable;
 
-/**
+/*
  初始化LinkedME提供Block回调处理RegisterDeepLinkHandler
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -162,7 +160,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options andRegisterDeepLinkHandler:(callbackWithParams)callback;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -170,7 +168,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options pres:(callbackWithLinkedMEUniversalObject)callback;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -178,7 +176,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -187,7 +185,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options isReferrable:(BOOL)isReferrable andRegisterDeepLinkHandler:(callbackWithParams)callback;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -196,7 +194,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options isReferrable:(BOOL)isReferrable automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -205,7 +203,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController deepLinkHandler:(callbackWithParams)callback;
 
-/**
+/*
  初始化LinkedME提供Block回调处理
  
  @param 选项在AppDelegate提供的启动选项的“didFinishLaunchingWithOptions:”方法中实现
@@ -215,7 +213,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)initSessionWithLaunchOptions:(NSDictionary *)options automaticallyDisplayDeepLinkController:(BOOL)automaticallyDisplayController isReferrable:(BOOL)isReferrable deepLinkHandler:(callbackWithParams)callback;
 
-/**
+/*
  允许LinkedME处理链接打开应用程序,打开后是否返回。
  
  @param url 使用url打开应用.
@@ -224,12 +222,12 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
     
 - (BOOL)handleSchemeLink:(NSURL *)url;
 
-/**
+/*
  允许从NSUserActivity处理连接,是否返回。
  
  @param userActivity 打开应用.
  */
-- (BOOL)continueUserActivity:(NSUserActivity *)userActivity;
+- (BOOL)continueUserActivity:(NSUserActivity *)userActivity API_AVAILABLE(ios(8.0));
 
 ///--------------------------------
 /// @name 推送通知支持
@@ -237,7 +235,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 
 #pragma mark - Push Notification support
 
-/**
+/*
  允许从通知中心打开
  在创建推送式通知时,指定关键的NSString LKME链接,@“LinkedME”
  NSDictionary userInfo = @{@"linkedme": @"https://lkme.cc/...", ... };
@@ -259,7 +257,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /// @name 配置
 ///--------------------
 
-/**
+/*
  Debug模式,记录反馈更多信息
  
  @warning 不适用于production!!
@@ -272,7 +270,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 
 - (void)disableMatching;
 
-/**
+/*
  增加指定其他常数的参数
  
  @param debugParams dictionary of keystrings/valuestrings that will be added to response
@@ -280,28 +278,28 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 -(void) setDeepLinkDebugMode:(NSDictionary *)debugParams;
 
 
-/**
+/*
  设置时间（秒）尝试重连LinkedME服务器
  
  @param retryInterval 秒.
  */
 - (void)setRetryInterval:(NSTimeInterval)retryInterval;
 
-/**
+/*
  设置最大重试次数
  
  @param maxRetries 重试次数
  */
 - (void)setMaxRetries:(NSInteger)maxRetries;
 
-/**
+/*
  请求超时设置(秒)
  
  @param timeout 秒
  */
 - (void)setNetworkTimeout:(NSTimeInterval)timeout;
 
-/**
+/*
  使用SFSafariViewController尝试cookie匹配。默认情况启用。
  
  @warning Please import SafariServices in order for this to work.
@@ -314,60 +312,60 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /// @name Session Items
 ///--------------------
 
-/**
+/*
  Get the LKMEUniversalObject from the first time this user was referred (can be empty).
  */
 - (LMUniversalObject *)getFirstReferringLinkedMEUniversalObject;
 
-/**
+/*
  Get the LKMELinkProperties from the first time this user was referred (can be empty).
  */
 - (LMLinkProperties *)getFirstReferringLinkedMELinkProperties;
 
-/**
+/*
  获取用户第一次使用信息 (可空).
  */
 - (NSDictionary *)getFirstReferringParams;
 
-/**
+/*
  最近一次获取LKMEUniversalObject信息(可空)
  */
 - (LMUniversalObject *)getLatestReferringLinkedMEUniversalObject;
 
-/**
+/*
  从最近一次获取LKMELinkProperties属性(可空）
  */
 - (LMLinkProperties *)getLatestReferringLinkedMELinkProperties;
 
-/**
+/*
     获取参数最近使用时间
  */
 - (NSDictionary *)getLatestReferringParams;
 
-/**
+/*
  内部调用自动完成
  Tells LinkedME to act as though initSession hadn't been called. Will require another open call (this is done automatically, internally).
  */
 
-/**
+/*
  *  重置用户会话
  */
 - (void)resetUserSession;
 
-/**
+/*
  
  用户是否自定义身份
  */
 - (BOOL)isUserIdentified;
 
-/**
+/*
  设置用户标识设置
  @param userId 用户标识
  @warning 如果你使用相同的ID用户之间在不同会话/设备,他们的行为将会被合并。
  */
 - (void)setIdentity:(NSString *)userId;
 
-/**
+/*
  设置用户表示,并且提供回调信息
  
  @param userId 用户标识
@@ -376,7 +374,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)setIdentity:(NSString *)userId withCallback:(callbackWithParams)callback;
 
-/**
+/*
  清除当前用户的所有会话
  
  @warning 如果注销失败,内容将不回被清除
@@ -447,7 +445,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 
 #pragma mark -initIwhtInterface
 
-/**
+/*
  
 初始化LinkedME
  
@@ -455,14 +453,14 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 //- (id)initWithInterface:(LMServerInterface *)interface queue:(LMServerRequestQueue *)queue cache:(LMLinkCache *)cache preferenceHelper:(LMPreferenceHelper *)preferenceHelper key:(NSString *)key;
 
-/**
+/*
  通过params注册view
  
  @warning SDK内部使用.
  */
 - (void)registerViewWithParams:(NSDictionary *)params andCallback:(callbackWithParams)callback;
 
-/**
+/*
  Method used by external LKME libs to initiate server requests
  */
 //- (void)executeGenericRequest:(LMServerRequest*)request;
@@ -470,7 +468,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 //- (void)getButton:(LMContext *)context andButtonId:(NSString *)buttonId
 //       completion:(CompletionHandler)completionHandler andInnerCallBack:(innerCallBack) innerCallBack;
 
-/**
+/*
  页面跳转方式-presentView（纯代码实现ViewController）
  
  @param vc 需要跳转的ViewController的类名（必选完全一致）
@@ -480,7 +478,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 + (void)presentViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
-/**
+/*
  页面跳转方式-presentView(storyBoard实现ViewController)
  
  @param vc 需要跳转的ViewController的类名（必选完全一致）
@@ -491,7 +489,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 + (void)presentViewController:(NSString *)vc storyBoardID:(NSString *)identifier animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
-/**
+/*
  页面跳转方式-push（纯代码实现ViewController）
  
  @param vc 需要跳转的ViewController的类名（必选完全一致）
@@ -501,7 +499,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 + (void)pushViewController:(NSString *)vc animated: (BOOL)flag customValue:(NSDictionary *)dict completion:(void (^)(void))completion NS_AVAILABLE_IOS(5_0);
 
-/**
+/*
  页面跳转方式-push(storyBoard实现ViewController)
  
  @param vc 需要跳转的ViewController的类名（必选完全一致）

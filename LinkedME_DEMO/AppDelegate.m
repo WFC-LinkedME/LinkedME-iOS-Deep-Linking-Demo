@@ -100,7 +100,6 @@
 #warning 必须实现
 //Universal Links 通用链接实现深度链接技术
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
-    
     //判断是否是通过LinkedME的Universal Links唤起App
     if ([[userActivity.webpageURL description] rangeOfString:@"lkme.cc"].location != NSNotFound) {
         return  [[LinkedME getInstance] continueUserActivity:userActivity];

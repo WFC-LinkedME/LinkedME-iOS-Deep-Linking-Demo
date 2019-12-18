@@ -2,7 +2,7 @@
 //  LMDeepLinkingController.h
 //  iOS-Deep-Linking-SDK
 //
-//  Created by han on 6/18/15.
+//  Created on 6/18/15.
 //  Copyright (c) 2015 Bindx. All rights reserved.
 //
 

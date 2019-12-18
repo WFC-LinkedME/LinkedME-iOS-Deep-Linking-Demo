@@ -2,7 +2,7 @@
 //  LMServerResponse.h
 //  iOS-Deep-Linking-SDK
 //
-//  Created by han on 10/10/14.
+//  Created on 10/10/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
 //
 

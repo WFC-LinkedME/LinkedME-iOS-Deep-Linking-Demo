@@ -2,7 +2,7 @@
 //  LMPreferenceHelper.h
 //  iOS-Deep-Linking-SDK
 
-//  Created by han on 6/6/14.
+//  Created on 6/6/14.
 //  Copyright (c) 2014 Bindx. All rights reserved.
 //
 
@@ -46,7 +46,6 @@
 @property (strong, nonatomic) NSString *sdk_version;
 @property (strong, nonatomic) NSString *closeSession;
 @property (assign, nonatomic) BOOL getSafariCookice;
-@property (assign, nonatomic) BOOL closeEnable;
 
 + (LMPreferenceHelper *)preferenceHelper;
 

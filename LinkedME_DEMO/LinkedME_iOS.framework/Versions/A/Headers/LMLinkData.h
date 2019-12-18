@@ -1,7 +1,7 @@
 //
 //  LMLinkData.h
 //  iOS-Deep-Linking-SDK
-//  Created by han on 1/22/15.
+//  Created on 1/22/15.
 //  Copyright (c) 2015 Bindx. All rights reserved.
 //
 

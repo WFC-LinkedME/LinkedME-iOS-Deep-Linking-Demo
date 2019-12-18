@@ -2,7 +2,7 @@
 //  LMUniversalObject.h
 //  iOS-Deep-Linking-SDK
 //
-//  Created by han on 10/16/15.
+//  Created on 10/16/15.
 //  Copyright © 2015 Bindx. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 #import "LMLinkProperties.h"
 #import "LinkedME.h"
 
-typedef void (^callback) ();
+typedef void (^callback) (void);
 typedef void (^shareCompletion) (NSString *activityType, BOOL completed);
 
 //通用对象
