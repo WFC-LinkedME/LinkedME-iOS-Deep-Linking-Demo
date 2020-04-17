@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSString *channel;                //渠道
 @property (nonatomic, strong) NSString *stage;                  //阶段
 @property (nonatomic, strong) NSString *source;                 //来源
+@property (nonatomic, assign) BOOL       state;                 //来源
 @property (nonatomic) NSUInteger matchDuration;                 //匹配延迟周期
 @property (nonatomic, strong) NSDictionary *controlParams;
 @property (nonatomic,copy)NSString *androidPathControlParam;

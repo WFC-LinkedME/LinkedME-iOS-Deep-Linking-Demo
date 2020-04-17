@@ -390,7 +390,7 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
 /// @name 创建链接
 ///----------------------------------------
 
-- (void)getShortUrlWithParams:(NSDictionary *)params andTags:(NSArray *)tags andAlias:(NSString *)alias andMatchDuration:(NSUInteger)duration andChannel:(NSString *)channel andFeature:(NSString *)feature andStage:(NSString *)stage andCallback:(callbackWithUrl)callback;
+- (void)getShortUrlWithParams:(NSDictionary *)params andTags:(NSArray *)tags andAlias:(NSString *)alias andMatchDuration:(NSUInteger)duration andChannel:(NSString *)channel andFeature:(NSString *)feature andStage:(NSString *)stage andState:(BOOL)state andCallback:(callbackWithUrl)callback;
 
 
 - (void)getSpotlightUrlWithParams:(NSDictionary *)params callback:(callbackWithParams)callback;

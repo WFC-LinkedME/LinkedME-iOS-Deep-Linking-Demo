@@ -28,6 +28,8 @@ typedef NS_ENUM(NSUInteger, LMLinkType) {
 - (void)setupFeature:(NSString *)feature;
 //设置阶段
 - (void)setupStage:(NSString *)stage;
+//
+- (void)setupState:(BOOL)state;
 //设置参数
 - (void)setupParams:(NSDictionary *)params;
 //设置有效时间

@@ -100,6 +100,21 @@
 #warning 必须实现
 //Universal Links 通用链接实现深度链接技术
 - (BOOL)application:(UIApplication*)application continueUserActivity:(NSUserActivity*)userActivity restorationHandler:(void (^)(NSArray*))restorationHandler{
+    
+    /*QQ互联Universal Links支持
+     文档地址：https://wiki.connect.qq.com/%E5%A1%AB%E5%86%99%E5%8F%8A%E6%A0%A1%E9%AA%8Cuniversallinks
+     
+     登录LinkedME后台-LinkPage-集成配置-链接配置中填写QQ互联APPID
+     后台地址https://dashboard.linkedme.cc/#/indexPage
+     */
+//    if (userActivity.webpageURL && [[QQTool shareQQTool] canHandleUniversalLink:userActivity.webpageURL) {
+//        return [[QQTool shareQQTool] handleUniversalLink:userActivity.webpageURL];
+//    }
+    
+    /*微信Universal Links LinkPage默认支持无需配置
+     https://developers.weixin.qq.com/doc/oplatform/Mobile_App/Access_Guide/iOS.html
+     */
+    
     //判断是否是通过LinkedME的Universal Links唤起App
     if ([[userActivity.webpageURL description] rangeOfString:@"lkme.cc"].location != NSNotFound) {
         return  [[LinkedME getInstance] continueUserActivity:userActivity];
