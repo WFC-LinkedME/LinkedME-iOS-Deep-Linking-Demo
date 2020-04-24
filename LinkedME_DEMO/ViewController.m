@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "DetailViewController.h"
 #import "DemoViewController.h"
+#import <LinkedME_iOS/LMPreferenceHelper.h>
 #import <LinkedME_iOS/LinkedME.h>
 
 @interface ViewController ()
@@ -19,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSLog(@"DeviceID：%@",[LMPreferenceHelper preferenceHelper].deviceID);
+
 
     /*----------------------Spotlight------------------------*/
     

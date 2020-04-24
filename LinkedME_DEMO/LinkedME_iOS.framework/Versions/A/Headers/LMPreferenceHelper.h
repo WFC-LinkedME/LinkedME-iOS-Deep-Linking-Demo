@@ -21,6 +21,7 @@
 @property (strong, nonatomic) NSDate   *lastStrongMatchDate;
 @property (strong, nonatomic) NSString *appVersion;
 @property (strong, nonatomic) NSString *deviceFingerprintID;
+@property (strong, nonatomic) NSString *deviceID;
 @property (strong, nonatomic) NSString *sessionID;
 @property (strong, nonatomic) NSString *identityID;
 @property (strong, nonatomic) NSString *linkClickIdentifier;
