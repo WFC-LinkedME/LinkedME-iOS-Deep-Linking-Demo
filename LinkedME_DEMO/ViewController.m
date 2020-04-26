@@ -23,7 +23,6 @@
     
     NSLog(@"DeviceID：%@",[LMPreferenceHelper preferenceHelper].deviceID);
 
-
     /*----------------------Spotlight------------------------*/
     
     //关键字
