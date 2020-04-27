@@ -26,7 +26,7 @@
 		8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028B1D06B990002E6881 /* libstdc++.tbd */; };
 		8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8701028D1D06B999002E6881 /* libsqlite3.tbd */; };
 		870102981D06D788002E6881 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 870102971D06D788002E6881 /* DemoViewController.m */; };
-		C46475C22452E5A2006568FD /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46475C12452E5A2006568FD /* LinkedME_iOS.framework */; };
+		C49772922456B21500D736CD /* LinkedME_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C49772912456B21500D736CD /* LinkedME_iOS.framework */; };
 		C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87105D3F1D2235FD00989202 /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -63,7 +63,7 @@
 		870102961D06D788002E6881 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
 		870102971D06D788002E6881 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
 		87105D3F1D2235FD00989202 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
-		C46475C12452E5A2006568FD /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
+		C49772912456B21500D736CD /* LinkedME_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LinkedME_iOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 				848EF28E1E2B74B700AD1D17 /* StoreKit.framework in Frameworks */,
 				C4D71B241D4F08890096341C /* CoreSpotlight.framework in Frameworks */,
 				8701028E1D06B999002E6881 /* libsqlite3.tbd in Frameworks */,
-				C46475C22452E5A2006568FD /* LinkedME_iOS.framework in Frameworks */,
+				C49772922456B21500D736CD /* LinkedME_iOS.framework in Frameworks */,
 				8701028C1D06B990002E6881 /* libstdc++.tbd in Frameworks */,
 				8701028A1D06B97B002E6881 /* libz.tbd in Frameworks */,
 				870102881D06B969002E6881 /* CoreTelephony.framework in Frameworks */,
@@ -179,7 +179,7 @@
 		87B8262B1D0D33E00099CAA5 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
-				C46475C12452E5A2006568FD /* LinkedME_iOS.framework */,
+				C49772912456B21500D736CD /* LinkedME_iOS.framework */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
