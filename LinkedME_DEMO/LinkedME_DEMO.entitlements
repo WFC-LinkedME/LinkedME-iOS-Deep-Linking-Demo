@@ -5,7 +5,7 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:lkme.cc</string>
-		<string>applinks:afc.lkme.cc</string>
+		<string>applinks:ebs.lkme.cc</string>
 	</array>
 </dict>
 </plist>

@@ -12,7 +12,7 @@
 
 
 static NSString * const H5_TEST_URL = @"http://192.168.10.101:8888/h5/summary?linkedme=";
-static NSString * const H5_LIVE_URL = @"https://www.linkedme.cc/h5/summary?linkedme=";
+static NSString * const H5_LIVE_URL = @"https://guide.lkme.cc/h5/summary?linkedme=";
 static NSString * LINKEDME_SHORT_URL;
 
 @interface DemoViewController ()

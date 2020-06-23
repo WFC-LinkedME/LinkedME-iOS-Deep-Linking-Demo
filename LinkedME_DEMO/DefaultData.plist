@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>url</key>
-		<string>https://www.linkedme.cc/iosdemo/apps.jsp?linkedme_key=</string>
+		<string>https://guide.lkme.cc/iosdemo/apps.jsp?linkedme_key=</string>
 		<key>key</key>
 		<string>DetailViewController</string>
 		<key>form</key>
@@ -14,7 +14,7 @@
 	</dict>
 	<dict>
 		<key>url</key>
-		<string>https://www.linkedme.cc/iosdemo/features.jsp?linkedme_key=</string>
+		<string>https://guide.lkme.cc/iosdemo/features.jsp?linkedme_key=</string>
 		<key>key</key>
 		<string>DetailViewController</string>
 		<key>form</key>
@@ -24,13 +24,13 @@
 	</dict>
 	<dict>
 		<key>url</key>
-		<string>https://www.linkedme.cc/h5/feature</string>
+		<string>https://guide.lkme.cc/h5/feature</string>
 		<key>key</key>
 		<string>DetailViewController</string>
 	</dict>
 	<dict>
 		<key>url</key>
-		<string>https://www.linkedme.cc/iosdemo/intro.jsp?linkedme_key=</string>
+		<string>https://guide.lkme.cc/iosdemo/intro.jsp?linkedme_key=</string>
 		<key>key</key>
 		<string>DetailViewController</string>
 		<key>form</key>

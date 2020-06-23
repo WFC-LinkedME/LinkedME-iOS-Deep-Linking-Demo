@@ -118,7 +118,7 @@ static NSString * LINKEDME_SHORT_URL;
             [self->H5_LIVE_URL stringByAppendingString:self->arr[self->page][@"form"]];
             [self->H5_LIVE_URL stringByAppendingString:@"?linkedme="];
             
-            self->H5_LIVE_URL = [NSString stringWithFormat:@"https://www.linkedme.cc/h5/%@?linkedme=",self->arr[self->page][@"form"]];
+            self->H5_LIVE_URL = [NSString stringWithFormat:@"https://guide.lkme.cc/h5/%@?linkedme=",self->arr[self->page][@"form"]];
             //前面是Html5页面,后面拼上深度链接https://xxxxx.xxx (html5 页面地址) ?linkedme=(深度链接)
             //https://www.linkedme.cc/h5/feature?linkedme=https://lkme.cc/AfC/mj9H87tk7
             LINKEDME_SHORT_URL = [self->H5_LIVE_URL stringByAppendingString:url];
