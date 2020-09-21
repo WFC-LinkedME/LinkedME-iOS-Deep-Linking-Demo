@@ -36,6 +36,7 @@
 @property (assign, nonatomic) BOOL explicitlyRequestedReferrable;
 @property (assign, nonatomic) BOOL isReferrable;
 @property (assign, nonatomic) BOOL isDebug;
+@property (assign, nonatomic) BOOL disableClipboardMatch;
 @property (assign, nonatomic) BOOL useHTTPS;
 @property (assign, nonatomic) BOOL disableLocation;
 @property (assign, nonatomic) BOOL shouldWaitForInit;

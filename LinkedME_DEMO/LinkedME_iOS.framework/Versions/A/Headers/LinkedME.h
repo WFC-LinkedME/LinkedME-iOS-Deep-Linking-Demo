@@ -264,6 +264,8 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  */
 - (void)setDebug;
 
+- (void)disableClipboardMatch;
+
 - (void)getSafariCookice:(BOOL)status;
 
 + (NSString *)getTestID;
