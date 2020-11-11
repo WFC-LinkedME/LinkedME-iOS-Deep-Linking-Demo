@@ -263,9 +263,9 @@ typedef NS_ENUM(NSUInteger, LMCreditHistoryOrder) {
  @warning 不适用于production!!
  */
 - (void)setDebug;
-
+//关闭剪切板匹配功能
 - (void)disableClipboardMatch;
-
+//获取safari缓存
 - (void)getSafariCookice:(BOOL)status;
 
 + (NSString *)getTestID;

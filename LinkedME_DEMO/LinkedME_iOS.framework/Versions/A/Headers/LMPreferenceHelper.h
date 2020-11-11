@@ -61,6 +61,8 @@
 
 + (NSString *)getSDKURL:(NSString *)endpoint;
 
+- (NSDate*) previousAppBuildDate;
+
 - (void)clearUserCreditsAndCounts;
 - (void)clearUserCredits;
 
