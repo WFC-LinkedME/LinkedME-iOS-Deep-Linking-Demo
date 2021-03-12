@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 [![Platform](https://img.shields.io/cocoapods/p/LinkedME_iOS.svg?style=flat)](http://cocoapods.org/pods/LinkedME_iOS)
 
-[进入官网查看详细文档](http://linkedme.cc/docs/page4.html#link0)
+[进入官网查看详细文档](https://docs.linkedme.cc/web/#/16)
 
 # 接入方法
 
